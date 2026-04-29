@@ -1,0 +1,66 @@
+[
+  {
+    "name": "o365e3tom365e3",
+    "description": "Interactive O365 E3 + 3rd-party vs M365 E3 bundle cost simulator (Gartner MQ-curated)",
+    "url": "https://zeffree.github.io/o365e3tom365e3/",
+    "source": "https://github.com/zeffree/o365e3tom365e3",
+    "updated": "2026-04-28T08:28:19Z",
+    "archived": false
+  },
+  {
+    "name": "me3tome5",
+    "description": "Interactive M365 E5 vs E3+competitive-stack cost & capability simulator (Gartner MQ-curated)",
+    "url": "https://zeffree.github.io/me3tome5/",
+    "source": "https://github.com/zeffree/me3tome5",
+    "updated": "2026-04-28T08:28:17Z",
+    "archived": false
+  },
+  {
+    "name": "o365-data-sovereignty-malaysia",
+    "description": "Customer reference brief on Microsoft 365 data ownership, residency, and lawful access for Malaysian enterprise and public sector",
+    "url": "https://zeffree.github.io/o365-data-sovereignty-malaysia/",
+    "source": "https://github.com/zeffree/o365-data-sovereignty-malaysia",
+    "updated": "2026-04-27T01:36:53Z",
+    "archived": false
+  },
+  {
+    "name": "cambodia-asean-ai-dashboard",
+    "description": "Interactive ASEAN AI & Digital Readiness benchmark dashboard - AI showcase for the Royal Government of Cambodia",
+    "url": "https://zeffree.github.io/cambodia-asean-ai-dashboard/",
+    "source": "https://github.com/zeffree/cambodia-asean-ai-dashboard",
+    "updated": "2026-04-26T05:25:56Z",
+    "archived": false
+  },
+  {
+    "name": "malaysia-macro-explorer",
+    "description": "Interactive correlation explorer for Malaysia macro indicators (CPI, Labour, GDP, Population) using DOSM open data",
+    "url": "https://zeffree.github.io/malaysia-macro-explorer/",
+    "source": "https://github.com/zeffree/malaysia-macro-explorer",
+    "updated": "2026-04-26T05:12:41Z",
+    "archived": false
+  },
+  {
+    "name": "gttcopilotchathr",
+    "description": null,
+    "url": "https://zeffree.github.io/gttcopilotchathr/",
+    "source": "https://github.com/zeffree/gttcopilotchathr",
+    "updated": "2026-04-26T03:30:21Z",
+    "archived": false
+  },
+  {
+    "name": "cv",
+    "description": null,
+    "url": "https://zeffree.github.io/cv/",
+    "source": "https://github.com/zeffree/cv",
+    "updated": "2026-04-25T00:03:48Z",
+    "archived": false
+  },
+  {
+    "name": "myspringboard",
+    "description": null,
+    "url": "https://zeffree.github.io/myspringboard/",
+    "source": "https://github.com/zeffree/myspringboard",
+    "updated": "2021-06-29T04:21:12Z",
+    "archived": false
+  }
+]
