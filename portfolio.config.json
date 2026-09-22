@@ -1,0 +1,216 @@
+{
+  "exclude": [
+    "test-hermes",
+    "myspringboard"
+  ],
+  "additionalProjects": [
+    {
+      "name": "jcorp-ai-readiness",
+      "url": "https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/",
+      "source": "https://github.com/zeffree/jcorp-ai-readiness"
+    },
+    {
+      "name": "me7",
+      "url": "https://e7calc.azurewebsites.net/",
+      "source": "https://github.com/zeffree/me7"
+    },
+    {
+      "name": "t1-demo-station",
+      "url": "https://t-onedemo-admin.azurewebsites.net/"
+    },
+    {
+      "name": "mmcdashboard",
+      "url": "https://zeffree.github.io/mmcdashboard/",
+      "source": "https://github.com/zeffree/mmcdashboard",
+      "sourcePrivate": true
+    }
+  ],
+  "projects": {
+    "malaysia-macro-explorer": {
+      "title": "Malaysia Macro Explorer",
+      "summary": "Explore relationships between inflation, employment, GDP and population using Department of Statistics Malaysia open data.",
+      "category": "Data & insights",
+      "preview": {
+        "src": "assets/previews/malaysia-macro-explorer-1280.webp",
+        "small": "assets/previews/malaysia-macro-explorer-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Malaysia Macro Explorer with economic indicators, date and metric selectors, and an inflation–unemployment time-series chart.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "me3tome5": {
+      "title": "Microsoft 365 E5 Cost Simulator",
+      "summary": "Compare Microsoft 365 E5 with E3 plus a replacement stack across costs and capabilities.",
+      "category": "Decision tools",
+      "preview": {
+        "src": "assets/previews/me3tome5-1280.webp",
+        "small": "assets/previews/me3tome5-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Microsoft 365 E5 comparison with user and replacement-stack controls beside cost totals and side-by-side line items.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "cambodia-asean-ai-dashboard": {
+      "title": "Cambodia × ASEAN AI Readiness",
+      "summary": "Compare Cambodia with ASEAN peers across digital infrastructure, AI readiness, human capital and innovation.",
+      "category": "Data & insights",
+      "preview": {
+        "src": "assets/previews/cambodia-asean-ai-dashboard-1280.webp",
+        "small": "assets/previews/cambodia-asean-ai-dashboard-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Cambodia–ASEAN readiness dashboard with country comparison buttons, AI-readiness summary cards and demographic indicators.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "gooestome3": {
+      "title": "Google Workspace vs Microsoft 365 E3",
+      "summary": "Compare Google Workspace Enterprise Standard plus third-party tools with Microsoft 365 E3 costs and capabilities.",
+      "category": "Decision tools",
+      "preview": {
+        "src": "assets/previews/gooestome3-1280.webp",
+        "small": "assets/previews/gooestome3-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Google Workspace Enterprise Standard and Microsoft 365 E3 comparison with user inputs, capability lists and cost totals.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "malakoff-ceo-dashboard": {
+      "title": "Malakoff CEO Control Center",
+      "summary": "An executive dashboard prototype with operations, financial, sustainability and safety views.",
+      "category": "Data & insights",
+      "featured": 2,
+      "preview": {
+        "src": "assets/previews/malakoff-ceo-dashboard-1280.webp",
+        "small": "assets/previews/malakoff-ceo-dashboard-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "jcorpmsft": {
+      "title": "JCorp × Copilot Adoption Journey",
+      "summary": "A 12-month Microsoft 365 Copilot adoption plan for Johor Corporation, organized around hands-on quests and champions.",
+      "category": "AI & adoption",
+      "preview": {
+        "src": "assets/previews/jcorpmsft-1280.webp",
+        "small": "assets/previews/jcorpmsft-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "JCorp × Copilot page introducing a 12-month adoption journey, with program highlights and the beginning of the adoption plan.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "ssdumsft": {
+      "title": "Smart Selangor AI Blueprint",
+      "summary": "An SSDU × Microsoft partnership blueprint connecting cloud and AI use cases with proposed pilots and a roadmap.",
+      "category": "AI & adoption",
+      "preview": {
+        "src": "assets/previews/ssdumsft-1280.webp",
+        "small": "assets/previews/ssdumsft-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "SSDU × Microsoft blueprint with a Smart Selangor introduction, opportunity panel and navigation to use cases and a roadmap.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "o365e3tom365e3": {
+      "title": "Office 365 to Microsoft 365 E3",
+      "summary": "Model Office 365 E3 plus third-party add-ons against the Microsoft 365 E3 bundle.",
+      "category": "Decision tools",
+      "preview": {
+        "src": "assets/previews/o365e3tom365e3-1280.webp",
+        "small": "assets/previews/o365e3tom365e3-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Office 365 E3 comparison with user and add-on controls, bundle cost totals and a side-by-side cost breakdown.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "o365-data-sovereignty-malaysia": {
+      "title": "Microsoft 365 Data Sovereignty",
+      "summary": "A Malaysia-focused reference on Microsoft 365 data ownership, residency, lawful access and customer controls.",
+      "category": "Decision tools",
+      "preview": {
+        "src": "assets/previews/o365-data-sovereignty-malaysia-1280.webp",
+        "small": "assets/previews/o365-data-sovereignty-malaysia-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Malaysia data-sovereignty reference with an introduction, key ownership and residency points, and section navigation.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "gttcopilotchathr": {
+      "title": "Copilot Chat for HR",
+      "summary": "A GTT Group workshop covering prompting, HR communications, hiring, policy and employee-feedback analysis.",
+      "category": "AI & adoption",
+      "preview": {
+        "src": "assets/previews/gttcopilotchathr-1280.webp",
+        "small": "assets/previews/gttcopilotchathr-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "jcorp-ai-readiness": {
+      "title": "JCorp AI Readiness",
+      "summary": "AI readiness assessment and management benchmarking for JCorp group companies, structured around the McKinsey individual and organizational assessment framework.",
+      "category": "AI & adoption",
+      "featured": 4,
+      "preview": {
+        "src": "assets/previews/jcorp-ai-readiness-1280.webp",
+        "small": "assets/previews/jcorp-ai-readiness-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "me7": {
+      "title": "Microsoft 365 E7 Savings Assessment",
+      "summary": "Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.",
+      "category": "Decision tools",
+      "featured": 1,
+      "preview": {
+        "src": "assets/previews/me7-1280.webp",
+        "small": "assets/previews/me7-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "t1-demo-station": {
+      "title": "T1 Demo Station",
+      "summary": "A little file, out in the world. Publish and share self-contained HTML demos from a browser-based station.",
+      "category": "Experiments",
+      "preview": {
+        "src": "assets/previews/t1-demo-station-1280.webp",
+        "small": "assets/previews/t1-demo-station-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "T1 Demo Station project page showing access.term; Good things start here.",
+        "capturedAt": "2026-09-18"
+      }
+    },
+    "mmcdashboard": {
+      "title": "MMC Executive Dashboard Concept",
+      "summary": "An illustrative group-level executive dashboard with synthetic data, not actual MMC results. An independent concept, not affiliated with or endorsed by MMC.",
+      "category": "Data & insights",
+      "featured": 3,
+      "preview": {
+        "src": "assets/previews/mmcdashboard-1280.webp",
+        "small": "assets/previews/mmcdashboard-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance",
+        "capturedAt": "2026-09-18"
+      }
+    }
+  }
+}

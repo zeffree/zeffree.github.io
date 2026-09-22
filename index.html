@@ -1,145 +1,672 @@
 <!doctype html>
+<!--
+THESIS: A portfolio as a working screen wall. Actual projects, not a grid of claims, own the room.
+OWN-WORLD: A blue broadcast field, aluminum monitor frames, signal accents, clear native controls; shared Clawpilot color tokens.
+STORY: Tune into a project, inspect the real interface, then launch the original work.
+FIRST VIEWPORT: A dominant project screen between two angled previews; project title and launch below, named channel rail within reach.
+FORM: Broadcast channel wall, grounded direction 7, seed 17ea1523. Focused screen selection with a direct linear index.
+-->
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>zeffree · Projects</title>
-  <meta name="description" content="Index of zeffree's GitHub Pages projects." />
+  <title>zeffree | The control room</title>
+  <meta name="description" content="Explore zeffree's interactive tools, data explorers, and experiments. Tune into a project, take a closer look, and launch it." />
+  <meta property="og:title" content="zeffree | The control room" />
+  <meta property="og:description" content="Tools for decisions. Interfaces for ideas. Explore the work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://zeffree.github.io/assets/previews/me7-1280.webp" /><meta property="og:image:alt" content="Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cstyle%3E%3Aroot%7B--cp-accent%3A%23b11f4b%3B--cp-accent-fg%3A%23fff%7Drect%7Bfill%3Avar(--cp-accent)%7Dtext%7Bfill%3Avar(--cp-accent-fg)%7D%3C%2Fstyle%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%2210%22%2F%3E%3Ctext%20x%3D%2220%22%20y%3D%2229%22%20text-anchor%3D%22middle%22%20font-family%3D%22Segoe%20UI%2Csans-serif%22%20font-size%3D%2231%22%20font-weight%3D%22800%22%3Ez%3C%2Ftext%3E%3C%2Fsvg%3E" />
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <style>:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}</style>
   <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./assets/portfolio.js"></script>
 </head>
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <img class="avatar" src="https://github.com/zeffree.png?size=120" alt="zeffree avatar" width="80" height="80" />
-      <div>
-        <h1>zeffree</h1>
-        <p class="tagline">Projects published on GitHub Pages.</p>
-        <p class="meta">
-          <a href="https://github.com/zeffree" target="_blank" rel="noopener">github.com/zeffree</a>
-          · 8 projects
-        </p>
+  <a class="skip-link" href="#project-index">Skip to project index</a>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="zeffree home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span translate="no">zeffree</span><span class="brand-note">Projects &amp; experiments</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false" hidden><span class="motion-symbol" aria-hidden="true">&#8779;</span><span data-motion-label>Reduce motion</span></button>
+      <a href="#project-index">Project index <span aria-hidden="true">&#8600;</span></a>
+      <a class="nav-github" href="https://github.com/zeffree" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="control-room" id="control-room" aria-labelledby="room-title">
+      <div class="room-heading">
+        <h1 id="room-title">The control room<span aria-hidden="true">.</span></h1>
+        <p>Tools for decisions. Interfaces for ideas.<br /> Pick a project. See what it can do.</p>
       </div>
-    </header>
-
-    <section class="grid">
-      
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/o365e3tom365e3/" target="_blank" rel="noopener">o365e3tom365e3</a></h2>
-        
-      </header>
-      <p class="desc">Interactive O365 E3 + 3rd-party vs M365 E3 bundle cost simulator (Gartner MQ-curated)</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/o365e3tom365e3/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/o365e3tom365e3" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-28</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/me3tome5/" target="_blank" rel="noopener">me3tome5</a></h2>
-        
-      </header>
-      <p class="desc">Interactive M365 E5 vs E3+competitive-stack cost &amp; capability simulator (Gartner MQ-curated)</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/me3tome5/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/me3tome5" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-28</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/o365-data-sovereignty-malaysia/" target="_blank" rel="noopener">o365-data-sovereignty-malaysia</a></h2>
-        
-      </header>
-      <p class="desc">Customer reference brief on Microsoft 365 data ownership, residency, and lawful access for Malaysian enterprise and public sector</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/o365-data-sovereignty-malaysia/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/o365-data-sovereignty-malaysia" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-27</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/cambodia-asean-ai-dashboard/" target="_blank" rel="noopener">cambodia-asean-ai-dashboard</a></h2>
-        
-      </header>
-      <p class="desc">Interactive ASEAN AI &amp; Digital Readiness benchmark dashboard - AI showcase for the Royal Government of Cambodia</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/cambodia-asean-ai-dashboard/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/cambodia-asean-ai-dashboard" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-26</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/malaysia-macro-explorer/" target="_blank" rel="noopener">malaysia-macro-explorer</a></h2>
-        
-      </header>
-      <p class="desc">Interactive correlation explorer for Malaysia macro indicators (CPI, Labour, GDP, Population) using DOSM open data</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/malaysia-macro-explorer/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/malaysia-macro-explorer" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-26</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/gttcopilotchathr/" target="_blank" rel="noopener">gttcopilotchathr</a></h2>
-        
-      </header>
-      <p class="desc">No description provided.</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/gttcopilotchathr/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/gttcopilotchathr" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-26</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/cv/" target="_blank" rel="noopener">cv</a></h2>
-        
-      </header>
-      <p class="desc">No description provided.</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/cv/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/cv" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2026-04-25</span>
-      </footer>
-    </article>
-
-    <article class="card">
-      <header>
-        <h2><a href="https://zeffree.github.io/myspringboard/" target="_blank" rel="noopener">myspringboard</a></h2>
-        
-      </header>
-      <p class="desc">No description provided.</p>
-      
-      <footer>
-        <a class="link" href="https://zeffree.github.io/myspringboard/" target="_blank" rel="noopener">↗ Live site</a>
-        <a class="link muted" href="https://github.com/zeffree/myspringboard" target="_blank" rel="noopener">Source</a>
-        <span class="meta">Updated 2021-06-29</span>
-      </footer>
-    </article>
+      <div class="wall-status"><span><span class="status-light" aria-hidden="true"></span><span id="stage-position">Channel 01 / 14</span></span><span>Real projects. Open to explore.</span></div>
+      <div class="screen-wall" id="screen-wall">
+        <div class="wall-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <a class="project-screen screen-main" id="stage-preview" href="#details-me7" data-inspect="me7" aria-label="Inspect Microsoft 365 E7 Savings Assessment">
+    <span class="screen-bar"><span class="screen-indicator" aria-hidden="true"></span><span data-screen-title>Microsoft 365 E7 Savings Assessment</span><span class="screen-action" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></span>
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/me7-1280.webp" srcset="./assets/previews/me7-640.webp 640w, ./assets/previews/me7-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 62vw" alt="Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together." width="1280" height="800" loading="eager" fetchpriority="high" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 E7 Savings Assessment</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <span class="screen-caption"><span>Project preview</span><span>Take a closer look &#8599;</span></span>
+  </a>
+        <button class="project-screen screen-left" type="button" data-wing data-select="malakoff-ceo-dashboard" aria-label="Select Malakoff CEO Control Center" hidden>
+    <span class="screen-bar"><span class="screen-indicator" aria-hidden="true"></span><span data-screen-title>Malakoff CEO Control Center</span><span class="screen-action" aria-hidden="true">+</span></span>
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/malakoff-ceo-dashboard-1280.webp" srcset="./assets/previews/malakoff-ceo-dashboard-640.webp 640w, ./assets/previews/malakoff-ceo-dashboard-1280.webp 1280w" sizes="(max-width: 700px) 1px, 28vw" alt="Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Malakoff CEO Control Center</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <span class="screen-caption"><span>Project preview</span><span>Tune in &#8594;</span></span>
+  </button>
+        <button class="project-screen screen-right" type="button" data-wing data-select="mmcdashboard" aria-label="Select MMC Executive Dashboard Concept" hidden>
+    <span class="screen-bar"><span class="screen-indicator" aria-hidden="true"></span><span data-screen-title>MMC Executive Dashboard Concept</span><span class="screen-action" aria-hidden="true">+</span></span>
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/mmcdashboard-1280.webp" srcset="./assets/previews/mmcdashboard-640.webp 640w, ./assets/previews/mmcdashboard-1280.webp 1280w" sizes="(max-width: 700px) 1px, 28vw" alt="MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance" width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>MMC Executive Dashboard Concept</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <span class="screen-caption"><span>Project preview</span><span>Tune in &#8594;</span></span>
+  </button>
+        <div class="stage-empty" hidden><h2>Nothing on this channel.</h2><p>Try another search or clear your filters.</p><button class="button button-light" type="button" data-reset hidden>Clear filters</button></div>
+      </div>
+      <div class="selected-project" id="selected-project">
+        <div class="selected-copy"><h2 id="selected-title" tabindex="-1" aria-live="polite" aria-atomic="true">Microsoft 365 E7 Savings Assessment</h2><p id="selected-summary">Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.</p></div>
+        <div class="selected-actions">
+          <a class="button button-light" id="selected-launch" href="https://e7calc.azurewebsites.net/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="room-detail-link" id="selected-details" href="#details-me7" data-inspect="me7">Take a closer look <span aria-hidden="true">+</span></a>
+        </div>
+      </div>
+      <nav class="channel-rail" aria-label="Project channels" data-enhancement hidden>
+        <button class="rail-arrow previous" type="button" data-step="-1" aria-label="Previous project"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+        <div class="channel-track" id="channel-track">
+          <button class="channel" type="button" data-channel="me7" aria-pressed="true"><span class="channel-id">01</span><span>Microsoft 365 E7 Savings Assessment</span><span class="channel-marker" aria-hidden="true">&#10003;</span></button><button class="channel" type="button" data-channel="malakoff-ceo-dashboard" aria-pressed="false"><span class="channel-id">02</span><span>Malakoff CEO Control Center</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="mmcdashboard" aria-pressed="false"><span class="channel-id">03</span><span>MMC Executive Dashboard Concept</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="jcorp-ai-readiness" aria-pressed="false"><span class="channel-id">04</span><span>JCorp AI Readiness</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="gooestome3" aria-pressed="false"><span class="channel-id">05</span><span>Google Workspace vs Microsoft 365 E3</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="jcorpmsft" aria-pressed="false"><span class="channel-id">06</span><span>JCorp × Copilot Adoption Journey</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="ssdumsft" aria-pressed="false"><span class="channel-id">07</span><span>Smart Selangor AI Blueprint</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="o365e3tom365e3" aria-pressed="false"><span class="channel-id">08</span><span>Office 365 to Microsoft 365 E3</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="me3tome5" aria-pressed="false"><span class="channel-id">09</span><span>Microsoft 365 E5 Cost Simulator</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="o365-data-sovereignty-malaysia" aria-pressed="false"><span class="channel-id">10</span><span>Microsoft 365 Data Sovereignty</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="cambodia-asean-ai-dashboard" aria-pressed="false"><span class="channel-id">11</span><span>Cambodia × ASEAN AI Readiness</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="malaysia-macro-explorer" aria-pressed="false"><span class="channel-id">12</span><span>Malaysia Macro Explorer</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="gttcopilotchathr" aria-pressed="false"><span class="channel-id">13</span><span>Copilot Chat for HR</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button><button class="channel" type="button" data-channel="t1-demo-station" aria-pressed="false"><span class="channel-id">14</span><span>T1 Demo Station</span><span class="channel-marker" aria-hidden="true">&#8599;</span></button>
+        </div>
+        <button class="rail-arrow" type="button" data-step="1" aria-label="Next project"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      </nav>
     </section>
 
-    <footer class="site-foot">
-      <span>Built 2026-04-29</span>
-      <a href="https://github.com/zeffree/zeffree.github.io" target="_blank" rel="noopener">View source</a>
-    </footer>
+    <section class="project-index" id="project-index" aria-labelledby="index-title">
+      <div class="index-heading">
+        <div><h2 id="index-title">The project index<span aria-hidden="true">.</span></h2><p>Something specific in mind? Start here.</p></div>
+        <search class="project-search" data-enhancement hidden><label for="project-search">Find a project <kbd aria-hidden="true">/</kbd></label><div class="search-field"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input id="project-search" name="q" type="search" placeholder="Try Malaysia or Copilot&#8230;" autocomplete="off" spellcheck="false" /><button type="button" id="clear-search" aria-label="Clear search" hidden>&#215;</button></div></search>
+      </div>
+      <noscript><p class="static-notice">You're viewing the static edition. Every project, preview, and source link is available below.</p></noscript>
+      <p id="site-notice" class="site-notice" role="status" hidden></p>
+      <div class="filter-bar" data-enhancement hidden>
+        <div class="category-filters" role="group" aria-label="Filter by category"><button type="button" class="category-filter" data-category="" aria-pressed="true"><span class="filter-check" aria-hidden="true">&#10003;</span>All projects</button><button type="button" class="category-filter" data-category="Data &amp; insights" aria-pressed="false"><span class="filter-check" aria-hidden="true"></span>Data &amp; insights</button><button type="button" class="category-filter" data-category="Decision tools" aria-pressed="false"><span class="filter-check" aria-hidden="true"></span>Decision tools</button><button type="button" class="category-filter" data-category="AI &amp; adoption" aria-pressed="false"><span class="filter-check" aria-hidden="true"></span>AI &amp; adoption</button><button type="button" class="category-filter" data-category="Experiments" aria-pressed="false"><span class="filter-check" aria-hidden="true"></span>Experiments</button></div>
+        <button class="surprise-button" id="surprise" type="button"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h3c5 0 7 12 12 12h3m-4-4 4 4-4 4M3 18h3c5 0 7-12 12-12h3m-4-4 4 4-4 4"/></svg><span>Surprise me</span></button>
+      </div>
+      <div class="index-status"><p id="results-status" role="status" aria-live="polite" aria-atomic="true">14 projects to explore.</p><label class="sort-control" data-enhancement hidden>Order by <select id="project-sort" name="sort" autocomplete="off"><option value="featured">Featured first</option><option value="recent">Recently updated</option><option value="alphabetical">A to Z</option></select></label></div>
+      <div class="no-results" id="no-results" hidden><h3>No matching projects.</h3><p>Try a broader search, or reset the filters to explore everything.</p><button class="button button-primary" type="button" data-reset hidden>Reset filters</button></div>
+      <div class="project-list" id="project-list"><article class="project-row" id="project-me7" data-project-row="me7">
+    <span class="channel-number" aria-label="Channel 1">01</span>
+    <a class="index-preview" href="#details-me7" data-inspect="me7" aria-label="Inspect Microsoft 365 E7 Savings Assessment"><span class="preview-media" data-preview>
+    <img src="./assets/previews/me7-1280.webp" srcset="./assets/previews/me7-640.webp 640w, ./assets/previews/me7-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 E7 Savings Assessment</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://e7calc.azurewebsites.net/" target="_blank" rel="noopener">Microsoft 365 E7 Savings Assessment<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.</p>
+      <div class="project-meta"><span>Decision tools</span><span>Updated <time datetime="2026-09-03T06:35:18Z">Sep 3, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://e7calc.azurewebsites.net/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/me7" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-me7" data-detail="me7">
+      <summary data-inspect="me7" aria-label="Details about Microsoft 365 E7 Savings Assessment"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/me7-1280.webp" srcset="./assets/previews/me7-640.webp 640w, ./assets/previews/me7-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 E7 Savings Assessment</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Decision tools</dd></div>
+        <div><dt>Repository</dt><dd>me7</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-09-03T06:35:18Z">Sep 3, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://e7calc.azurewebsites.net/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/me7" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-malakoff-ceo-dashboard" data-project-row="malakoff-ceo-dashboard">
+    <span class="channel-number" aria-label="Channel 2">02</span>
+    <a class="index-preview" href="#details-malakoff-ceo-dashboard" data-inspect="malakoff-ceo-dashboard" aria-label="Inspect Malakoff CEO Control Center"><span class="preview-media" data-preview>
+    <img src="./assets/previews/malakoff-ceo-dashboard-1280.webp" srcset="./assets/previews/malakoff-ceo-dashboard-640.webp 640w, ./assets/previews/malakoff-ceo-dashboard-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Malakoff CEO Control Center</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/malakoff-ceo-dashboard/" target="_blank" rel="noopener">Malakoff CEO Control Center<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>An executive dashboard prototype with operations, financial, sustainability and safety views.</p>
+      <div class="project-meta"><span>Data &amp; insights</span><span>Updated <time datetime="2026-05-19T07:26:30Z">May 19, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/malakoff-ceo-dashboard/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/malakoff-ceo-dashboard" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-malakoff-ceo-dashboard" data-detail="malakoff-ceo-dashboard">
+      <summary data-inspect="malakoff-ceo-dashboard" aria-label="Details about Malakoff CEO Control Center"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/malakoff-ceo-dashboard-1280.webp" srcset="./assets/previews/malakoff-ceo-dashboard-640.webp 640w, ./assets/previews/malakoff-ceo-dashboard-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Malakoff CEO Control Center</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">An executive dashboard prototype with operations, financial, sustainability and safety views.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Data &amp; insights</dd></div>
+        <div><dt>Repository</dt><dd>malakoff-ceo-dashboard</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-05-19T07:26:30Z">May 19, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/malakoff-ceo-dashboard/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/malakoff-ceo-dashboard" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-mmcdashboard" data-project-row="mmcdashboard">
+    <span class="channel-number" aria-label="Channel 3">03</span>
+    <a class="index-preview" href="#details-mmcdashboard" data-inspect="mmcdashboard" aria-label="Inspect MMC Executive Dashboard Concept"><span class="preview-media" data-preview>
+    <img src="./assets/previews/mmcdashboard-1280.webp" srcset="./assets/previews/mmcdashboard-640.webp 640w, ./assets/previews/mmcdashboard-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance" width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>MMC Executive Dashboard Concept</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/mmcdashboard/" target="_blank" rel="noopener">MMC Executive Dashboard Concept<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>An illustrative group-level executive dashboard with synthetic data, not actual MMC results. An independent concept, not affiliated with or endorsed by MMC.</p>
+      <div class="project-meta"><span>Data &amp; insights</span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/mmcdashboard/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/mmcdashboard" target="_blank" rel="noopener">Source (private)<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-mmcdashboard" data-detail="mmcdashboard">
+      <summary data-inspect="mmcdashboard" aria-label="Details about MMC Executive Dashboard Concept"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/mmcdashboard-1280.webp" srcset="./assets/previews/mmcdashboard-640.webp 640w, ./assets/previews/mmcdashboard-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance" width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>MMC Executive Dashboard Concept</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">An illustrative group-level executive dashboard with synthetic data, not actual MMC results. An independent concept, not affiliated with or endorsed by MMC.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Data &amp; insights</dd></div>
+        <div><dt>Repository</dt><dd>mmcdashboard</dd></div>
+
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+      <p class="preview-note">The source repository is private and requires GitHub access.</p>
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/mmcdashboard/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/mmcdashboard" target="_blank" rel="noopener">View source (private) <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-jcorp-ai-readiness" data-project-row="jcorp-ai-readiness">
+    <span class="channel-number" aria-label="Channel 4">04</span>
+    <a class="index-preview" href="#details-jcorp-ai-readiness" data-inspect="jcorp-ai-readiness" aria-label="Inspect JCorp AI Readiness"><span class="preview-media" data-preview>
+    <img src="./assets/previews/jcorp-ai-readiness-1280.webp" srcset="./assets/previews/jcorp-ai-readiness-640.webp 640w, ./assets/previews/jcorp-ai-readiness-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness" width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>JCorp AI Readiness</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/" target="_blank" rel="noopener">JCorp AI Readiness<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>AI readiness assessment and management benchmarking for JCorp group companies, structured around the McKinsey individual and organizational assessment framework.</p>
+      <div class="project-meta"><span>AI &amp; adoption</span><span>Updated <time datetime="2026-08-11T13:07:34Z">Aug 11, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/jcorp-ai-readiness" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-jcorp-ai-readiness" data-detail="jcorp-ai-readiness">
+      <summary data-inspect="jcorp-ai-readiness" aria-label="Details about JCorp AI Readiness"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/jcorp-ai-readiness-1280.webp" srcset="./assets/previews/jcorp-ai-readiness-640.webp 640w, ./assets/previews/jcorp-ai-readiness-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness" width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>JCorp AI Readiness</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">AI readiness assessment and management benchmarking for JCorp group companies, structured around the McKinsey individual and organizational assessment framework.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>AI &amp; adoption</dd></div>
+        <div><dt>Repository</dt><dd>jcorp-ai-readiness</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-08-11T13:07:34Z">Aug 11, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/jcorp-ai-readiness" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-gooestome3" data-project-row="gooestome3">
+    <span class="channel-number" aria-label="Channel 5">05</span>
+    <a class="index-preview" href="#details-gooestome3" data-inspect="gooestome3" aria-label="Inspect Google Workspace vs Microsoft 365 E3"><span class="preview-media" data-preview>
+    <img src="./assets/previews/gooestome3-1280.webp" srcset="./assets/previews/gooestome3-640.webp 640w, ./assets/previews/gooestome3-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Google Workspace Enterprise Standard and Microsoft 365 E3 comparison with user inputs, capability lists and cost totals." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Google Workspace vs Microsoft 365 E3</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/gooestome3/" target="_blank" rel="noopener">Google Workspace vs Microsoft 365 E3<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Compare Google Workspace Enterprise Standard plus third-party tools with Microsoft 365 E3 costs and capabilities.</p>
+      <div class="project-meta"><span>Decision tools</span><span>Updated <time datetime="2026-05-22T09:49:48Z">May 22, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/gooestome3/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/gooestome3" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-gooestome3" data-detail="gooestome3">
+      <summary data-inspect="gooestome3" aria-label="Details about Google Workspace vs Microsoft 365 E3"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/gooestome3-1280.webp" srcset="./assets/previews/gooestome3-640.webp 640w, ./assets/previews/gooestome3-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Google Workspace Enterprise Standard and Microsoft 365 E3 comparison with user inputs, capability lists and cost totals." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Google Workspace vs Microsoft 365 E3</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Compare Google Workspace Enterprise Standard plus third-party tools with Microsoft 365 E3 costs and capabilities.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Decision tools</dd></div>
+        <div><dt>Repository</dt><dd>gooestome3</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-05-22T09:49:48Z">May 22, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/gooestome3/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/gooestome3" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-jcorpmsft" data-project-row="jcorpmsft">
+    <span class="channel-number" aria-label="Channel 6">06</span>
+    <a class="index-preview" href="#details-jcorpmsft" data-inspect="jcorpmsft" aria-label="Inspect JCorp × Copilot Adoption Journey"><span class="preview-media" data-preview>
+    <img src="./assets/previews/jcorpmsft-1280.webp" srcset="./assets/previews/jcorpmsft-640.webp 640w, ./assets/previews/jcorpmsft-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="JCorp × Copilot page introducing a 12-month adoption journey, with program highlights and the beginning of the adoption plan." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>JCorp × Copilot Adoption Journey</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/jcorpmsft/" target="_blank" rel="noopener">JCorp × Copilot Adoption Journey<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>A 12-month Microsoft 365 Copilot adoption plan for Johor Corporation, organized around hands-on quests and champions.</p>
+      <div class="project-meta"><span>AI &amp; adoption</span><span>Updated <time datetime="2026-05-06T15:33:32Z">May 6, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/jcorpmsft/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/jcorpmsft" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-jcorpmsft" data-detail="jcorpmsft">
+      <summary data-inspect="jcorpmsft" aria-label="Details about JCorp × Copilot Adoption Journey"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/jcorpmsft-1280.webp" srcset="./assets/previews/jcorpmsft-640.webp 640w, ./assets/previews/jcorpmsft-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="JCorp × Copilot page introducing a 12-month adoption journey, with program highlights and the beginning of the adoption plan." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>JCorp × Copilot Adoption Journey</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">A 12-month Microsoft 365 Copilot adoption plan for Johor Corporation, organized around hands-on quests and champions.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>AI &amp; adoption</dd></div>
+        <div><dt>Repository</dt><dd>jcorpmsft</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-05-06T15:33:32Z">May 6, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/jcorpmsft/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/jcorpmsft" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-ssdumsft" data-project-row="ssdumsft">
+    <span class="channel-number" aria-label="Channel 7">07</span>
+    <a class="index-preview" href="#details-ssdumsft" data-inspect="ssdumsft" aria-label="Inspect Smart Selangor AI Blueprint"><span class="preview-media" data-preview>
+    <img src="./assets/previews/ssdumsft-1280.webp" srcset="./assets/previews/ssdumsft-640.webp 640w, ./assets/previews/ssdumsft-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="SSDU × Microsoft blueprint with a Smart Selangor introduction, opportunity panel and navigation to use cases and a roadmap." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Smart Selangor AI Blueprint</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/ssdumsft/" target="_blank" rel="noopener">Smart Selangor AI Blueprint<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>An SSDU × Microsoft partnership blueprint connecting cloud and AI use cases with proposed pilots and a roadmap.</p>
+      <div class="project-meta"><span>AI &amp; adoption</span><span>Updated <time datetime="2026-04-29T23:08:56Z">Apr 29, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/ssdumsft/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/ssdumsft" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-ssdumsft" data-detail="ssdumsft">
+      <summary data-inspect="ssdumsft" aria-label="Details about Smart Selangor AI Blueprint"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/ssdumsft-1280.webp" srcset="./assets/previews/ssdumsft-640.webp 640w, ./assets/previews/ssdumsft-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="SSDU × Microsoft blueprint with a Smart Selangor introduction, opportunity panel and navigation to use cases and a roadmap." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Smart Selangor AI Blueprint</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">An SSDU × Microsoft partnership blueprint connecting cloud and AI use cases with proposed pilots and a roadmap.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>AI &amp; adoption</dd></div>
+        <div><dt>Repository</dt><dd>ssdumsft</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-29T23:08:56Z">Apr 29, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/ssdumsft/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/ssdumsft" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-o365e3tom365e3" data-project-row="o365e3tom365e3">
+    <span class="channel-number" aria-label="Channel 8">08</span>
+    <a class="index-preview" href="#details-o365e3tom365e3" data-inspect="o365e3tom365e3" aria-label="Inspect Office 365 to Microsoft 365 E3"><span class="preview-media" data-preview>
+    <img src="./assets/previews/o365e3tom365e3-1280.webp" srcset="./assets/previews/o365e3tom365e3-640.webp 640w, ./assets/previews/o365e3tom365e3-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Office 365 E3 comparison with user and add-on controls, bundle cost totals and a side-by-side cost breakdown." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Office 365 to Microsoft 365 E3</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/o365e3tom365e3/" target="_blank" rel="noopener">Office 365 to Microsoft 365 E3<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Model Office 365 E3 plus third-party add-ons against the Microsoft 365 E3 bundle.</p>
+      <div class="project-meta"><span>Decision tools</span><span>Updated <time datetime="2026-04-28T08:28:19Z">Apr 28, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/o365e3tom365e3/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/o365e3tom365e3" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-o365e3tom365e3" data-detail="o365e3tom365e3">
+      <summary data-inspect="o365e3tom365e3" aria-label="Details about Office 365 to Microsoft 365 E3"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/o365e3tom365e3-1280.webp" srcset="./assets/previews/o365e3tom365e3-640.webp 640w, ./assets/previews/o365e3tom365e3-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Office 365 E3 comparison with user and add-on controls, bundle cost totals and a side-by-side cost breakdown." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Office 365 to Microsoft 365 E3</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Model Office 365 E3 plus third-party add-ons against the Microsoft 365 E3 bundle.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Decision tools</dd></div>
+        <div><dt>Repository</dt><dd>o365e3tom365e3</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-28T08:28:19Z">Apr 28, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/o365e3tom365e3/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/o365e3tom365e3" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-me3tome5" data-project-row="me3tome5">
+    <span class="channel-number" aria-label="Channel 9">09</span>
+    <a class="index-preview" href="#details-me3tome5" data-inspect="me3tome5" aria-label="Inspect Microsoft 365 E5 Cost Simulator"><span class="preview-media" data-preview>
+    <img src="./assets/previews/me3tome5-1280.webp" srcset="./assets/previews/me3tome5-640.webp 640w, ./assets/previews/me3tome5-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Microsoft 365 E5 comparison with user and replacement-stack controls beside cost totals and side-by-side line items." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 E5 Cost Simulator</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/me3tome5/" target="_blank" rel="noopener">Microsoft 365 E5 Cost Simulator<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Compare Microsoft 365 E5 with E3 plus a replacement stack across costs and capabilities.</p>
+      <div class="project-meta"><span>Decision tools</span><span>Updated <time datetime="2026-04-28T08:28:17Z">Apr 28, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/me3tome5/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/me3tome5" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-me3tome5" data-detail="me3tome5">
+      <summary data-inspect="me3tome5" aria-label="Details about Microsoft 365 E5 Cost Simulator"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/me3tome5-1280.webp" srcset="./assets/previews/me3tome5-640.webp 640w, ./assets/previews/me3tome5-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Microsoft 365 E5 comparison with user and replacement-stack controls beside cost totals and side-by-side line items." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 E5 Cost Simulator</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Compare Microsoft 365 E5 with E3 plus a replacement stack across costs and capabilities.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Decision tools</dd></div>
+        <div><dt>Repository</dt><dd>me3tome5</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-28T08:28:17Z">Apr 28, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/me3tome5/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/me3tome5" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-o365-data-sovereignty-malaysia" data-project-row="o365-data-sovereignty-malaysia">
+    <span class="channel-number" aria-label="Channel 10">10</span>
+    <a class="index-preview" href="#details-o365-data-sovereignty-malaysia" data-inspect="o365-data-sovereignty-malaysia" aria-label="Inspect Microsoft 365 Data Sovereignty"><span class="preview-media" data-preview>
+    <img src="./assets/previews/o365-data-sovereignty-malaysia-1280.webp" srcset="./assets/previews/o365-data-sovereignty-malaysia-640.webp 640w, ./assets/previews/o365-data-sovereignty-malaysia-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Malaysia data-sovereignty reference with an introduction, key ownership and residency points, and section navigation." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 Data Sovereignty</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/o365-data-sovereignty-malaysia/" target="_blank" rel="noopener">Microsoft 365 Data Sovereignty<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>A Malaysia-focused reference on Microsoft 365 data ownership, residency, lawful access and customer controls.</p>
+      <div class="project-meta"><span>Decision tools</span><span>Updated <time datetime="2026-04-27T01:36:53Z">Apr 27, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/o365-data-sovereignty-malaysia/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/o365-data-sovereignty-malaysia" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-o365-data-sovereignty-malaysia" data-detail="o365-data-sovereignty-malaysia">
+      <summary data-inspect="o365-data-sovereignty-malaysia" aria-label="Details about Microsoft 365 Data Sovereignty"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/o365-data-sovereignty-malaysia-1280.webp" srcset="./assets/previews/o365-data-sovereignty-malaysia-640.webp 640w, ./assets/previews/o365-data-sovereignty-malaysia-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Malaysia data-sovereignty reference with an introduction, key ownership and residency points, and section navigation." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Microsoft 365 Data Sovereignty</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">A Malaysia-focused reference on Microsoft 365 data ownership, residency, lawful access and customer controls.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Decision tools</dd></div>
+        <div><dt>Repository</dt><dd>o365-data-sovereignty-malaysia</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-27T01:36:53Z">Apr 27, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/o365-data-sovereignty-malaysia/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/o365-data-sovereignty-malaysia" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-cambodia-asean-ai-dashboard" data-project-row="cambodia-asean-ai-dashboard">
+    <span class="channel-number" aria-label="Channel 11">11</span>
+    <a class="index-preview" href="#details-cambodia-asean-ai-dashboard" data-inspect="cambodia-asean-ai-dashboard" aria-label="Inspect Cambodia × ASEAN AI Readiness"><span class="preview-media" data-preview>
+    <img src="./assets/previews/cambodia-asean-ai-dashboard-1280.webp" srcset="./assets/previews/cambodia-asean-ai-dashboard-640.webp 640w, ./assets/previews/cambodia-asean-ai-dashboard-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Cambodia–ASEAN readiness dashboard with country comparison buttons, AI-readiness summary cards and demographic indicators." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Cambodia × ASEAN AI Readiness</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/cambodia-asean-ai-dashboard/" target="_blank" rel="noopener">Cambodia × ASEAN AI Readiness<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Compare Cambodia with ASEAN peers across digital infrastructure, AI readiness, human capital and innovation.</p>
+      <div class="project-meta"><span>Data &amp; insights</span><span>Updated <time datetime="2026-04-26T05:25:56Z">Apr 26, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/cambodia-asean-ai-dashboard/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/cambodia-asean-ai-dashboard" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-cambodia-asean-ai-dashboard" data-detail="cambodia-asean-ai-dashboard">
+      <summary data-inspect="cambodia-asean-ai-dashboard" aria-label="Details about Cambodia × ASEAN AI Readiness"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/cambodia-asean-ai-dashboard-1280.webp" srcset="./assets/previews/cambodia-asean-ai-dashboard-640.webp 640w, ./assets/previews/cambodia-asean-ai-dashboard-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Cambodia–ASEAN readiness dashboard with country comparison buttons, AI-readiness summary cards and demographic indicators." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Cambodia × ASEAN AI Readiness</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Compare Cambodia with ASEAN peers across digital infrastructure, AI readiness, human capital and innovation.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Data &amp; insights</dd></div>
+        <div><dt>Repository</dt><dd>cambodia-asean-ai-dashboard</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-26T05:25:56Z">Apr 26, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/cambodia-asean-ai-dashboard/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/cambodia-asean-ai-dashboard" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-malaysia-macro-explorer" data-project-row="malaysia-macro-explorer">
+    <span class="channel-number" aria-label="Channel 12">12</span>
+    <a class="index-preview" href="#details-malaysia-macro-explorer" data-inspect="malaysia-macro-explorer" aria-label="Inspect Malaysia Macro Explorer"><span class="preview-media" data-preview>
+    <img src="./assets/previews/malaysia-macro-explorer-1280.webp" srcset="./assets/previews/malaysia-macro-explorer-640.webp 640w, ./assets/previews/malaysia-macro-explorer-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="Malaysia Macro Explorer with economic indicators, date and metric selectors, and an inflation–unemployment time-series chart." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Malaysia Macro Explorer</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/malaysia-macro-explorer/" target="_blank" rel="noopener">Malaysia Macro Explorer<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>Explore relationships between inflation, employment, GDP and population using Department of Statistics Malaysia open data.</p>
+      <div class="project-meta"><span>Data &amp; insights</span><span>Updated <time datetime="2026-04-26T05:12:41Z">Apr 26, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/malaysia-macro-explorer/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/malaysia-macro-explorer" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-malaysia-macro-explorer" data-detail="malaysia-macro-explorer">
+      <summary data-inspect="malaysia-macro-explorer" aria-label="Details about Malaysia Macro Explorer"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/malaysia-macro-explorer-1280.webp" srcset="./assets/previews/malaysia-macro-explorer-640.webp 640w, ./assets/previews/malaysia-macro-explorer-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="Malaysia Macro Explorer with economic indicators, date and metric selectors, and an inflation–unemployment time-series chart." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Malaysia Macro Explorer</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">Explore relationships between inflation, employment, GDP and population using Department of Statistics Malaysia open data.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Data &amp; insights</dd></div>
+        <div><dt>Repository</dt><dd>malaysia-macro-explorer</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-26T05:12:41Z">Apr 26, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/malaysia-macro-explorer/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/malaysia-macro-explorer" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-gttcopilotchathr" data-project-row="gttcopilotchathr">
+    <span class="channel-number" aria-label="Channel 13">13</span>
+    <a class="index-preview" href="#details-gttcopilotchathr" data-inspect="gttcopilotchathr" aria-label="Inspect Copilot Chat for HR"><span class="preview-media" data-preview>
+    <img src="./assets/previews/gttcopilotchathr-1280.webp" srcset="./assets/previews/gttcopilotchathr-640.webp 640w, ./assets/previews/gttcopilotchathr-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Copilot Chat for HR</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://zeffree.github.io/gttcopilotchathr/" target="_blank" rel="noopener">Copilot Chat for HR<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>A GTT Group workshop covering prompting, HR communications, hiring, policy and employee-feedback analysis.</p>
+      <div class="project-meta"><span>AI &amp; adoption</span><span>Updated <time datetime="2026-04-26T03:30:21Z">Apr 26, 2026</time></span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://zeffree.github.io/gttcopilotchathr/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/gttcopilotchathr" target="_blank" rel="noopener">Source<span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-gttcopilotchathr" data-detail="gttcopilotchathr">
+      <summary data-inspect="gttcopilotchathr" aria-label="Details about Copilot Chat for HR"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/gttcopilotchathr-1280.webp" srcset="./assets/previews/gttcopilotchathr-640.webp 640w, ./assets/previews/gttcopilotchathr-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>Copilot Chat for HR</strong><span>Preview unavailable.</span><span>Open the project or browse its source below.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">A GTT Group workshop covering prompting, HR communications, hiring, policy and employee-feedback analysis.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>AI &amp; adoption</dd></div>
+        <div><dt>Repository</dt><dd>gttcopilotchathr</dd></div>
+        <div><dt>Repository activity</dt><dd><time datetime="2026-04-26T03:30:21Z">Apr 26, 2026</time></dd></div>
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://zeffree.github.io/gttcopilotchathr/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="button button-outline" href="https://github.com/zeffree/gttcopilotchathr" target="_blank" rel="noopener">View source <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article>
+<article class="project-row" id="project-t1-demo-station" data-project-row="t1-demo-station">
+    <span class="channel-number" aria-label="Channel 14">14</span>
+    <a class="index-preview" href="#details-t1-demo-station" data-inspect="t1-demo-station" aria-label="Inspect T1 Demo Station"><span class="preview-media" data-preview>
+    <img src="./assets/previews/t1-demo-station-1280.webp" srcset="./assets/previews/t1-demo-station-640.webp 640w, ./assets/previews/t1-demo-station-1280.webp 1280w" sizes="(max-width: 600px) 128px, 184px" alt="T1 Demo Station project page showing access.term; Good things start here." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>T1 Demo Station</strong><span>Preview unavailable.</span><span>Open the project for the full experience.</span></span>
+  </span></a>
+    <div class="project-copy">
+      <h3><a class="project-title" href="https://t-onedemo-admin.azurewebsites.net/" target="_blank" rel="noopener">T1 Demo Station<span class="sr-only"> (opens in a new tab)</span></a></h3>
+      <p>A little file, out in the world. Publish and share self-contained HTML demos from a browser-based station.</p>
+      <div class="project-meta"><span>Experiments</span></div>
+
+    </div>
+    <div class="row-actions"><a class="button button-outline" href="https://t-onedemo-admin.azurewebsites.net/" target="_blank" rel="noopener">Launch <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    <details class="project-details" id="details-t1-demo-station" data-detail="t1-demo-station">
+      <summary data-inspect="t1-demo-station" aria-label="Details about T1 Demo Station"><span>Take a closer look</span><span aria-hidden="true">+</span></summary>
+      <div class="detail-content">
+    <span class="preview-media" data-preview>
+    <img src="./assets/previews/t1-demo-station-1280.webp" srcset="./assets/previews/t1-demo-station-640.webp 640w, ./assets/previews/t1-demo-station-1280.webp 1280w" sizes="(max-width: 700px) 90vw, 880px" alt="T1 Demo Station project page showing access.term; Good things start here." width="1280" height="800" loading="lazy" decoding="async" />
+    <span class="preview-fallback" hidden><strong>T1 Demo Station</strong><span>Preview unavailable.</span><span>Open the project for the full experience.</span></span>
+  </span>
+    <div class="detail-copy">
+      <p class="detail-summary">A little file, out in the world. Publish and share self-contained HTML demos from a browser-based station.</p>
+      <dl class="project-facts">
+        <div><dt>Category</dt><dd>Experiments</dd></div>
+        <div><dt>Website</dt><dd>t-onedemo-admin.azurewebsites.net</dd></div>
+
+        <div><dt>Preview captured</dt><dd><time datetime="2026-09-18">Sep 18, 2026</time></dd></div>
+      </dl>
+
+      <p class="preview-note">A snapshot of the interface, not live data. Open the project for its current content.</p>
+
+      <div class="detail-actions"><a class="button button-primary" href="https://t-onedemo-admin.azurewebsites.net/" target="_blank" rel="noopener">Launch project <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a></div>
+    </div>
+  </div>
+    </details>
+  </article></div>
+    </section>
   </main>
+
+  <footer class="site-footer"><div><a class="footer-brand" href="./">zeffree</a><p>Always another idea to explore.</p></div><div class="footer-links"><a class="text-link" href="https://github.com/zeffree" target="_blank" rel="noopener">GitHub profile <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="https://github.com/zeffree/zeffree.github.io" target="_blank" rel="noopener">Behind the scenes <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="text-link" href="./projects.json">Project data <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><span class="catalog-date">Catalog refreshed Sep 18, 2026</span></div></footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header"><h2 id="dialog-title"></h2><button class="dialog-close" type="button" aria-label="Close project details" autofocus>&#215;</button></div>
+    <div id="dialog-content"></div>
+  </dialog>
+  <script id="catalog-data" type="application/json">{"projects":[{"name":"me7","description":null,"url":"https://e7calc.azurewebsites.net/","source":"https://github.com/zeffree/me7","updated":"2026-09-03T06:35:18Z","archived":false,"origin":"manual","sourcePrivate":false,"title":"Microsoft 365 E7 Savings Assessment","summary":"Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.","category":"Decision tools","featured":1,"topics":[],"preview":{"src":"assets/previews/me7-1280.webp","small":"assets/previews/me7-640.webp","width":1280,"height":800,"alt":"Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together.","capturedAt":"2026-09-18"}},{"name":"jcorp-ai-readiness","description":"AI readiness assessment and management benchmark dashboard for JCorp group companies, structured on the McKinsey AI Individual & Organizational Assessment framework.","url":"https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/","source":"https://github.com/zeffree/jcorp-ai-readiness","updated":"2026-08-11T13:07:34Z","archived":false,"origin":"manual","sourcePrivate":false,"title":"JCorp AI Readiness","summary":"AI readiness assessment and management benchmarking for JCorp group companies, structured around the McKinsey individual and organizational assessment framework.","category":"AI & adoption","featured":4,"topics":[],"preview":{"src":"assets/previews/jcorp-ai-readiness-1280.webp","small":"assets/previews/jcorp-ai-readiness-640.webp","width":1280,"height":800,"alt":"JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness","capturedAt":"2026-09-18"}},{"name":"gooestome3","description":"Simulation of the Cost from moving from Google Enterprise Std to M365 E3","url":"https://zeffree.github.io/gooestome3/","source":"https://github.com/zeffree/gooestome3","updated":"2026-05-22T09:49:48Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Google Workspace vs Microsoft 365 E3","summary":"Compare Google Workspace Enterprise Standard plus third-party tools with Microsoft 365 E3 costs and capabilities.","category":"Decision tools","featured":null,"topics":[],"preview":{"src":"assets/previews/gooestome3-1280.webp","small":"assets/previews/gooestome3-640.webp","width":1280,"height":800,"alt":"Google Workspace Enterprise Standard and Microsoft 365 E3 comparison with user inputs, capability lists and cost totals.","capturedAt":"2026-09-18"}},{"name":"malakoff-ceo-dashboard","description":"Malakoff CEO war-room dashboard prototype","url":"https://zeffree.github.io/malakoff-ceo-dashboard/","source":"https://github.com/zeffree/malakoff-ceo-dashboard","updated":"2026-05-19T07:26:30Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Malakoff CEO Control Center","summary":"An executive dashboard prototype with operations, financial, sustainability and safety views.","category":"Data & insights","featured":2,"topics":[],"preview":{"src":"assets/previews/malakoff-ceo-dashboard-1280.webp","small":"assets/previews/malakoff-ceo-dashboard-640.webp","width":1280,"height":800,"alt":"Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list.","capturedAt":"2026-09-18"}},{"name":"jcorpmsft","description":"Fun, interactive 12-month M365 Copilot adoption journey for Johor Corporation HQ","url":"https://zeffree.github.io/jcorpmsft/","source":"https://github.com/zeffree/jcorpmsft","updated":"2026-05-06T15:33:32Z","archived":false,"origin":"github","sourcePrivate":false,"title":"JCorp × Copilot Adoption Journey","summary":"A 12-month Microsoft 365 Copilot adoption plan for Johor Corporation, organized around hands-on quests and champions.","category":"AI & adoption","featured":null,"topics":[],"preview":{"src":"assets/previews/jcorpmsft-1280.webp","small":"assets/previews/jcorpmsft-640.webp","width":1280,"height":800,"alt":"JCorp × Copilot page introducing a 12-month adoption journey, with program highlights and the beginning of the adoption plan.","capturedAt":"2026-09-18"}},{"name":"ssdumsft","description":"SSDU x Microsoft - AI partnership blueprint for Smart Selangor","url":"https://zeffree.github.io/ssdumsft/","source":"https://github.com/zeffree/ssdumsft","updated":"2026-04-29T23:08:56Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Smart Selangor AI Blueprint","summary":"An SSDU × Microsoft partnership blueprint connecting cloud and AI use cases with proposed pilots and a roadmap.","category":"AI & adoption","featured":null,"topics":[],"preview":{"src":"assets/previews/ssdumsft-1280.webp","small":"assets/previews/ssdumsft-640.webp","width":1280,"height":800,"alt":"SSDU × Microsoft blueprint with a Smart Selangor introduction, opportunity panel and navigation to use cases and a roadmap.","capturedAt":"2026-09-18"}},{"name":"o365e3tom365e3","description":"Interactive O365 E3 + 3rd-party vs M365 E3 bundle cost simulator (Gartner MQ-curated)","url":"https://zeffree.github.io/o365e3tom365e3/","source":"https://github.com/zeffree/o365e3tom365e3","updated":"2026-04-28T08:28:19Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Office 365 to Microsoft 365 E3","summary":"Model Office 365 E3 plus third-party add-ons against the Microsoft 365 E3 bundle.","category":"Decision tools","featured":null,"topics":[],"preview":{"src":"assets/previews/o365e3tom365e3-1280.webp","small":"assets/previews/o365e3tom365e3-640.webp","width":1280,"height":800,"alt":"Office 365 E3 comparison with user and add-on controls, bundle cost totals and a side-by-side cost breakdown.","capturedAt":"2026-09-18"}},{"name":"me3tome5","description":"Interactive M365 E5 vs E3+competitive-stack cost & capability simulator (Gartner MQ-curated)","url":"https://zeffree.github.io/me3tome5/","source":"https://github.com/zeffree/me3tome5","updated":"2026-04-28T08:28:17Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Microsoft 365 E5 Cost Simulator","summary":"Compare Microsoft 365 E5 with E3 plus a replacement stack across costs and capabilities.","category":"Decision tools","featured":null,"topics":[],"preview":{"src":"assets/previews/me3tome5-1280.webp","small":"assets/previews/me3tome5-640.webp","width":1280,"height":800,"alt":"Microsoft 365 E5 comparison with user and replacement-stack controls beside cost totals and side-by-side line items.","capturedAt":"2026-09-18"}},{"name":"o365-data-sovereignty-malaysia","description":"Customer reference brief on Microsoft 365 data ownership, residency, and lawful access for Malaysian enterprise and public sector","url":"https://zeffree.github.io/o365-data-sovereignty-malaysia/","source":"https://github.com/zeffree/o365-data-sovereignty-malaysia","updated":"2026-04-27T01:36:53Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Microsoft 365 Data Sovereignty","summary":"A Malaysia-focused reference on Microsoft 365 data ownership, residency, lawful access and customer controls.","category":"Decision tools","featured":null,"topics":[],"preview":{"src":"assets/previews/o365-data-sovereignty-malaysia-1280.webp","small":"assets/previews/o365-data-sovereignty-malaysia-640.webp","width":1280,"height":800,"alt":"Malaysia data-sovereignty reference with an introduction, key ownership and residency points, and section navigation.","capturedAt":"2026-09-18"}},{"name":"cambodia-asean-ai-dashboard","description":"Interactive ASEAN AI & Digital Readiness benchmark dashboard - AI showcase for the Royal Government of Cambodia","url":"https://zeffree.github.io/cambodia-asean-ai-dashboard/","source":"https://github.com/zeffree/cambodia-asean-ai-dashboard","updated":"2026-04-26T05:25:56Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Cambodia × ASEAN AI Readiness","summary":"Compare Cambodia with ASEAN peers across digital infrastructure, AI readiness, human capital and innovation.","category":"Data & insights","featured":null,"topics":[],"preview":{"src":"assets/previews/cambodia-asean-ai-dashboard-1280.webp","small":"assets/previews/cambodia-asean-ai-dashboard-640.webp","width":1280,"height":800,"alt":"Cambodia–ASEAN readiness dashboard with country comparison buttons, AI-readiness summary cards and demographic indicators.","capturedAt":"2026-09-18"}},{"name":"malaysia-macro-explorer","description":"Interactive correlation explorer for Malaysia macro indicators (CPI, Labour, GDP, Population) using DOSM open data","url":"https://zeffree.github.io/malaysia-macro-explorer/","source":"https://github.com/zeffree/malaysia-macro-explorer","updated":"2026-04-26T05:12:41Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Malaysia Macro Explorer","summary":"Explore relationships between inflation, employment, GDP and population using Department of Statistics Malaysia open data.","category":"Data & insights","featured":null,"topics":[],"preview":{"src":"assets/previews/malaysia-macro-explorer-1280.webp","small":"assets/previews/malaysia-macro-explorer-640.webp","width":1280,"height":800,"alt":"Malaysia Macro Explorer with economic indicators, date and metric selectors, and an inflation–unemployment time-series chart.","capturedAt":"2026-09-18"}},{"name":"gttcopilotchathr","description":null,"url":"https://zeffree.github.io/gttcopilotchathr/","source":"https://github.com/zeffree/gttcopilotchathr","updated":"2026-04-26T03:30:21Z","archived":false,"origin":"github","sourcePrivate":false,"title":"Copilot Chat for HR","summary":"A GTT Group workshop covering prompting, HR communications, hiring, policy and employee-feedback analysis.","category":"AI & adoption","featured":null,"topics":[],"preview":{"src":"assets/previews/gttcopilotchathr-1280.webp","small":"assets/previews/gttcopilotchathr-640.webp","width":1280,"height":800,"alt":"GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda.","capturedAt":"2026-09-18"}},{"name":"mmcdashboard","description":null,"url":"https://zeffree.github.io/mmcdashboard/","source":"https://github.com/zeffree/mmcdashboard","updated":null,"archived":false,"origin":"manual","sourcePrivate":true,"title":"MMC Executive Dashboard Concept","summary":"An illustrative group-level executive dashboard with synthetic data, not actual MMC results. An independent concept, not affiliated with or endorsed by MMC.","category":"Data & insights","featured":3,"topics":[],"preview":{"src":"assets/previews/mmcdashboard-1280.webp","small":"assets/previews/mmcdashboard-640.webp","width":1280,"height":800,"alt":"MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance","capturedAt":"2026-09-18"}},{"name":"t1-demo-station","description":null,"url":"https://t-onedemo-admin.azurewebsites.net/","source":null,"updated":null,"archived":false,"origin":"manual","sourcePrivate":false,"title":"T1 Demo Station","summary":"A little file, out in the world. Publish and share self-contained HTML demos from a browser-based station.","category":"Experiments","featured":null,"topics":[],"preview":{"src":"assets/previews/t1-demo-station-1280.webp","small":"assets/previews/t1-demo-station-640.webp","width":1280,"height":800,"alt":"T1 Demo Station project page showing access.term; Good things start here.","capturedAt":"2026-09-18"}}],"generatedAt":"2026-09-18T07:36:18.652Z","snapshot":false}</script>
 </body>
 </html>

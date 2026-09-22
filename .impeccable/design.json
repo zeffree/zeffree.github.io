@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T06:10:26.881Z",
+  "title": "Design System: Project Control Room",
+  "extensions": {
+    "colorMeta": {
+      "cp-accent": {
+        "role": "primary",
+        "displayName": "Rose signal",
+        "tonalRamp": ["oklch(15% 0.1802 10.14)", "oklch(26.43% 0.1802 10.14)", "oklch(37.86% 0.1802 10.14)", "oklch(49.29% 0.1802 10.14)", "oklch(60.71% 0.1802 10.14)", "oklch(72.14% 0.1802 10.14)", "oklch(83.57% 0.1802 10.14)", "oklch(95% 0.1802 10.14)"]
+      },
+      "cp-accent-dark": {
+        "role": "primary",
+        "displayName": "Rose signal — dark",
+        "tonalRamp": ["oklch(15% 0.1350 9.80)", "oklch(26.43% 0.1350 9.80)", "oklch(37.86% 0.1350 9.80)", "oklch(49.29% 0.1350 9.80)", "oklch(60.71% 0.1350 9.80)", "oklch(72.14% 0.1350 9.80)", "oklch(83.57% 0.1350 9.80)", "oklch(95% 0.1350 9.80)"]
+      },
+      "cp-accent-hover": {
+        "role": "primary",
+        "displayName": "Rose action hover",
+        "tonalRamp": ["oklch(15% 0.1624 9.83)", "oklch(26.43% 0.1624 9.83)", "oklch(37.86% 0.1624 9.83)", "oklch(49.29% 0.1624 9.83)", "oklch(60.71% 0.1624 9.83)", "oklch(72.14% 0.1624 9.83)", "oklch(83.57% 0.1624 9.83)", "oklch(95% 0.1624 9.83)"]
+      },
+      "cp-accent-hover-dark": {
+        "role": "primary",
+        "displayName": "Rose action hover — dark",
+        "tonalRamp": ["oklch(15% 0.1569 10.96)", "oklch(26.43% 0.1569 10.96)", "oklch(37.86% 0.1569 10.96)", "oklch(49.29% 0.1569 10.96)", "oklch(60.71% 0.1569 10.96)", "oklch(72.14% 0.1569 10.96)", "oklch(83.57% 0.1569 10.96)", "oklch(95% 0.1569 10.96)"]
+      },
+      "cp-accent-soft": {
+        "role": "primary",
+        "displayName": "Soft rose wash",
+        "tonalRamp": ["oklch(15% 0.1802 10.14 / 0.08)", "oklch(26.43% 0.1802 10.14 / 0.08)", "oklch(37.86% 0.1802 10.14 / 0.08)", "oklch(49.29% 0.1802 10.14 / 0.08)", "oklch(60.71% 0.1802 10.14 / 0.08)", "oklch(72.14% 0.1802 10.14 / 0.08)", "oklch(83.57% 0.1802 10.14 / 0.08)", "oklch(95% 0.1802 10.14 / 0.08)"]
+      },
+      "cp-accent-soft-dark": {
+        "role": "primary",
+        "displayName": "Soft rose wash — dark",
+        "tonalRamp": ["oklch(15% 0.1350 9.80 / 0.14)", "oklch(26.43% 0.1350 9.80 / 0.14)", "oklch(37.86% 0.1350 9.80 / 0.14)", "oklch(49.29% 0.1350 9.80 / 0.14)", "oklch(60.71% 0.1350 9.80 / 0.14)", "oklch(72.14% 0.1350 9.80 / 0.14)", "oklch(83.57% 0.1350 9.80 / 0.14)", "oklch(95% 0.1350 9.80 / 0.14)"]
+      },
+      "cp-accent-fg": {
+        "role": "neutral",
+        "displayName": "Signal foreground",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-accent-fg-dark": {
+        "role": "neutral",
+        "displayName": "Signal foreground — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-link": {
+        "role": "secondary",
+        "displayName": "Broadcast blue",
+        "tonalRamp": ["oklch(15% 0.1665 251.31)", "oklch(26.43% 0.1665 251.31)", "oklch(37.86% 0.1665 251.31)", "oklch(49.29% 0.1665 251.31)", "oklch(60.71% 0.1665 251.31)", "oklch(72.14% 0.1665 251.31)", "oklch(83.57% 0.1665 251.31)", "oklch(95% 0.1665 251.31)"]
+      },
+      "cp-link-dark": {
+        "role": "secondary",
+        "displayName": "Broadcast blue — dark",
+        "tonalRamp": ["oklch(15% 0.1559 250.96)", "oklch(26.43% 0.1559 250.96)", "oklch(37.86% 0.1559 250.96)", "oklch(49.29% 0.1559 250.96)", "oklch(60.71% 0.1559 250.96)", "oklch(72.14% 0.1559 250.96)", "oklch(83.57% 0.1559 250.96)", "oklch(95% 0.1559 250.96)"]
+      },
+      "cp-warning": {
+        "role": "tertiary",
+        "displayName": "Amber signal",
+        "tonalRamp": ["oklch(15% 0.1647 70.08)", "oklch(26.43% 0.1647 70.08)", "oklch(37.86% 0.1647 70.08)", "oklch(49.29% 0.1647 70.08)", "oklch(60.71% 0.1647 70.08)", "oklch(72.14% 0.1647 70.08)", "oklch(83.57% 0.1647 70.08)", "oklch(95% 0.1647 70.08)"]
+      },
+      "cp-warning-dark": {
+        "role": "tertiary",
+        "displayName": "Amber signal — dark",
+        "tonalRamp": ["oklch(15% 0.1644 84.43)", "oklch(26.43% 0.1644 84.43)", "oklch(37.86% 0.1644 84.43)", "oklch(49.29% 0.1644 84.43)", "oklch(60.71% 0.1644 84.43)", "oklch(72.14% 0.1644 84.43)", "oklch(83.57% 0.1644 84.43)", "oklch(95% 0.1644 84.43)"]
+      },
+      "cp-bg": {
+        "role": "neutral",
+        "displayName": "Warm canvas",
+        "tonalRamp": ["oklch(15% 0.0074 80.72)", "oklch(26.43% 0.0074 80.72)", "oklch(37.86% 0.0074 80.72)", "oklch(49.29% 0.0074 80.72)", "oklch(60.71% 0.0074 80.72)", "oklch(72.14% 0.0074 80.72)", "oklch(83.57% 0.0074 80.72)", "oklch(95% 0.0074 80.72)"]
+      },
+      "cp-bg-dark": {
+        "role": "neutral",
+        "displayName": "Warm canvas — dark",
+        "tonalRamp": ["oklch(15% 0.0033 48.64)", "oklch(26.43% 0.0033 48.64)", "oklch(37.86% 0.0033 48.64)", "oklch(49.29% 0.0033 48.64)", "oklch(60.71% 0.0033 48.64)", "oklch(72.14% 0.0033 48.64)", "oklch(83.57% 0.0033 48.64)", "oklch(95% 0.0033 48.64)"]
+      },
+      "cp-bg-elevated": {
+        "role": "neutral",
+        "displayName": "Raised canvas",
+        "tonalRamp": ["oklch(15% 0.0041 91.45)", "oklch(26.43% 0.0041 91.45)", "oklch(37.86% 0.0041 91.45)", "oklch(49.29% 0.0041 91.45)", "oklch(60.71% 0.0041 91.45)", "oklch(72.14% 0.0041 91.45)", "oklch(83.57% 0.0041 91.45)", "oklch(95% 0.0041 91.45)"]
+      },
+      "cp-bg-elevated-dark": {
+        "role": "neutral",
+        "displayName": "Raised canvas — dark",
+        "tonalRamp": ["oklch(15% 0.0034 48.62)", "oklch(26.43% 0.0034 48.62)", "oklch(37.86% 0.0034 48.62)", "oklch(49.29% 0.0034 48.62)", "oklch(60.71% 0.0034 48.62)", "oklch(72.14% 0.0034 48.62)", "oklch(83.57% 0.0034 48.62)", "oklch(95% 0.0034 48.62)"]
+      },
+      "cp-surface": {
+        "role": "neutral",
+        "displayName": "Monitor metal",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-surface-dark": {
+        "role": "neutral",
+        "displayName": "Monitor metal — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-surface-soft": {
+        "role": "neutral",
+        "displayName": "Soft inset",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-surface-soft-dark": {
+        "role": "neutral",
+        "displayName": "Soft inset — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-border": {
+        "role": "neutral",
+        "displayName": "Fine rule",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-border-dark": {
+        "role": "neutral",
+        "displayName": "Fine rule — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-border-strong": {
+        "role": "neutral",
+        "displayName": "Strong rule",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-border-strong-dark": {
+        "role": "neutral",
+        "displayName": "Strong rule — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-text": {
+        "role": "neutral",
+        "displayName": "Primary ink",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-text-dark": {
+        "role": "neutral",
+        "displayName": "Primary ink — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-readable-muted": {
+        "role": "neutral",
+        "displayName": "Readable secondary ink",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-readable-muted-dark": {
+        "role": "neutral",
+        "displayName": "Readable secondary ink — dark",
+        "tonalRamp": ["oklch(15% 0 0)", "oklch(26.43% 0 0)", "oklch(37.86% 0 0)", "oklch(49.29% 0 0)", "oklch(60.71% 0 0)", "oklch(72.14% 0 0)", "oklch(83.57% 0 0)", "oklch(95% 0 0)"]
+      },
+      "cp-overlay": {
+        "role": "neutral",
+        "displayName": "Modal veil",
+        "tonalRamp": ["oklch(15% 0 0 / 0.8)", "oklch(26.43% 0 0 / 0.8)", "oklch(37.86% 0 0 / 0.8)", "oklch(49.29% 0 0 / 0.8)", "oklch(60.71% 0 0 / 0.8)", "oklch(72.14% 0 0 / 0.8)", "oklch(83.57% 0 0 / 0.8)", "oklch(95% 0 0 / 0.8)"]
+      },
+      "cp-overlay-dark": {
+        "role": "neutral",
+        "displayName": "Modal veil — dark",
+        "tonalRamp": ["oklch(15% 0 0 / 0.88)", "oklch(26.43% 0 0 / 0.88)", "oklch(37.86% 0 0 / 0.88)", "oklch(49.29% 0 0 / 0.88)", "oklch(60.71% 0 0 / 0.88)", "oklch(72.14% 0 0 / 0.88)", "oklch(83.57% 0 0 / 0.88)", "oklch(95% 0 0 / 0.88)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Broadcast display", "purpose": "Heavy system-sans display, with the implemented mobile clamp." },
+      "headline": { "displayName": "Section headline", "purpose": "Fluid section heading, balanced and tightly tracked." },
+      "selected-title": { "displayName": "Selected project", "purpose": "Project emphasis outside the screen chrome; wraps long names." },
+      "title": { "displayName": "Index title", "purpose": "Readable project-row heading and direct launch link." },
+      "body": { "displayName": "Project summary", "purpose": "Open-leading descriptive copy, with a bounded reading measure." },
+      "label": { "displayName": "Field and status label", "purpose": "Semibold native field and status labels; not the regular-weight metadata style." },
+      "button": { "displayName": "Action label", "purpose": "Compact semibold text within generous native action targets." }
+    },
+    "shadows": [
+      { "name": "cp-shadow", "value": "0 18px 48px rgba(0, 0, 0, 0.12)", "purpose": "Light-theme structural lift for monitor frames and the native dialog; not index rows." },
+      { "name": "cp-shadow-dark", "value": "0 18px 48px rgba(0, 0, 0, 0.32)", "purpose": "Dark-theme value of the same --cp-shadow property." }
+    ],
+    "motion": [
+      { "name": "control-feedback", "value": "160ms ease-out", "purpose": "Shared button background and text-color feedback." },
+      { "name": "small-affordance", "value": "180ms ease-out", "purpose": "Screen action transform and supported dialog opacity/transform entry." },
+      { "name": "screen-hover", "value": "320ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Supporting physical-screen hover transform." },
+      { "name": "tune-out", "value": "120ms ease-out", "purpose": "Outgoing preview fade during an optional native view transition." },
+      { "name": "tune-in", "value": "360ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Incoming preview reveal; limited to the screen rather than the root page." },
+      { "name": "screen-settle", "value": "420ms cubic-bezier(.16,1,.3,1)", "purpose": "Optional desktop Web Animations screen settling; cancelled by new selection, reduced motion, mobile changes, or document hiding." }
+    ],
+    "breakpoints": [
+      { "name": "wide-room-min", "value": "1600px" },
+      { "name": "medium-viewport-max", "value": "1100px" },
+      { "name": "single-screen-viewport-max", "value": "760px" },
+      { "name": "narrow-viewport-max", "value": "380px" },
+      { "name": "screen-chrome-container-max", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Signal-colored native action with the implemented hover, focus, disabled, and reduced-motion treatments.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Launch project <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></button>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 20px; border: 1px solid var(--cp-accent); border-radius: 10px; background: var(--cp-accent); color: var(--cp-accent-fg); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.35; cursor: pointer; touch-action: manipulation; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-button-primary svg { display: block; flex: 0 0 auto; } .ds-button-primary:hover { background: var(--cp-accent-hover); border-color: var(--cp-accent-hover); } .ds-button-primary:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-button-primary:disabled { cursor: not-allowed; opacity: .5; } :host-context([data-motion='reduced']) .ds-button-primary { transition: none; } @media (prefers-reduced-motion: reduce) { .ds-button-primary { transition: none; } } @media (forced-colors: active) { .ds-button-primary { border-width: 2px; } }"
+    },
+    {
+      "name": "Light action on broadcast",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Neutral launch action in its blue-field context, including the contrasting field focus outline.",
+      "html": "<div class=\"ds-broadcast-action\"><button class=\"ds-button-light\" type=\"button\">Launch project <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></button></div>",
+      "css": ".ds-broadcast-action { padding: 24px; background: var(--cp-link); color: var(--cp-accent-fg); border-radius: 12px; } .ds-button-light { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 20px; border: 1px solid var(--cp-surface); border-radius: 10px; background: var(--cp-surface); color: var(--cp-text); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.35; cursor: pointer; touch-action: manipulation; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-button-light svg { display: block; flex: 0 0 auto; } .ds-button-light:hover { background: var(--cp-bg); border-color: var(--cp-bg); } .ds-button-light:focus-visible { outline: 3px solid var(--cp-accent-fg); outline-offset: 5px; } .ds-button-light:disabled { cursor: not-allowed; opacity: .5; } :host-context([data-motion='reduced']) .ds-button-light { transition: none; } @media (prefers-reduced-motion: reduce) { .ds-button-light { transition: none; } } @media (max-width: 760px) { .ds-button-light { min-height: 44px; font-size: 12px; padding: 12px 14px; gap: 8px; } } @media (forced-colors: active) { .ds-button-light { border-width: 2px; } }"
+    },
+    {
+      "name": "Outline action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Readable neutral outline for secondary actions, gaining the shared soft signal fill on hover.",
+      "html": "<button class=\"ds-button-outline\" type=\"button\">View source <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></button>",
+      "css": ".ds-button-outline { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 20px; border: 1px solid var(--cp-readable-muted); border-radius: 10px; background: none; color: var(--cp-text); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-weight: 600; line-height: 1.35; cursor: pointer; touch-action: manipulation; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-button-outline svg { display: block; flex: 0 0 auto; } .ds-button-outline:hover { background: var(--cp-accent-soft); border-color: var(--cp-accent); color: var(--cp-accent); } .ds-button-outline:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-button-outline:disabled { cursor: not-allowed; opacity: .5; } :host-context([data-motion='reduced']) .ds-button-outline { transition: none; } @media (prefers-reduced-motion: reduce) { .ds-button-outline { transition: none; } } @media (forced-colors: active) { .ds-button-outline { border-width: 2px; } }"
+    },
+    {
+      "name": "Labeled project search",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "Native search with a persistent label, readable hint, and underline focus treatment; the application adds clear and shortcut behavior.",
+      "html": "<search class=\"ds-project-search\"><label for=\"ds-project-query\">Find a project <kbd aria-hidden=\"true\">/</kbd></label><div class=\"ds-search-field\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"6\"/><path d=\"m15 15 6 6\"/></svg><input id=\"ds-project-query\" name=\"q\" type=\"search\" placeholder=\"Try Malaysia or Copilot…\" autocomplete=\"off\" spellcheck=\"false\"/></div></search>",
+      "css": ".ds-project-search { display: block; width: min(100%, 340px); color: var(--cp-text); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.55; } .ds-project-search label { display: flex; align-items: center; justify-content: space-between; font-size: 12px; margin-bottom: 8px; font-weight: 600; } .ds-project-search kbd { font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid var(--cp-border-strong); border-radius: 4px; } .ds-search-field { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--cp-readable-muted); } .ds-search-field:focus-within { border-bottom-color: var(--cp-accent); } .ds-search-field svg { display: block; } .ds-search-field input { color: var(--cp-text); width: 100%; min-width: 0; min-height: 48px; background: none; border: 0; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 15px; border-radius: 4px; touch-action: manipulation; } .ds-search-field input::placeholder { color: var(--cp-readable-muted); opacity: 1; } .ds-search-field input:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } @media (max-width: 760px) { .ds-project-search { width: 100%; } }"
+    },
+    {
+      "name": "Named channel rail",
+      "kind": "nav",
+      "refersTo": "channel",
+      "description": "Selected and unselected native channel specimens; the application supplies stepping, roving focus, and scroll alignment.",
+      "html": "<nav class=\"ds-channel-rail\" aria-label=\"Project channels\"><button class=\"ds-rail-arrow ds-previous\" type=\"button\" aria-label=\"Previous project\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"m9 5 7 7-7 7\"/></svg></button><div class=\"ds-channel-track\"><button class=\"ds-channel\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-channel-id\">01</span><span>Selected project</span><span class=\"ds-channel-marker\" aria-hidden=\"true\">✓</span></button><button class=\"ds-channel\" type=\"button\" aria-pressed=\"false\"><span class=\"ds-channel-id\">02</span><span>Another project</span><span class=\"ds-channel-marker\" aria-hidden=\"true\">↗</span></button></div><button class=\"ds-rail-arrow\" type=\"button\" aria-label=\"Next project\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"m9 5 7 7-7 7\"/></svg></button></nav>",
+      "css": ".ds-channel-rail { display: flex; align-items: stretch; gap: 8px; padding: 8px; border-radius: 12px; background: var(--cp-bg-elevated); color: var(--cp-text); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; } .ds-channel-rail :focus-visible { outline: 3px solid var(--cp-accent); outline-offset: -3px; } .ds-rail-arrow { display: grid; place-items: center; flex: 0 0 44px; width: 44px; min-height: 56px; border: 0; border-radius: 8px; background: var(--cp-surface-soft); color: var(--cp-text); cursor: pointer; touch-action: manipulation; } .ds-rail-arrow:hover:not(:disabled) { background: var(--cp-accent-soft); color: var(--cp-accent); } .ds-rail-arrow:disabled { cursor: not-allowed; opacity: .5; } .ds-previous svg { transform: rotate(180deg); } .ds-channel-track { display: flex; flex: 1; min-width: 0; gap: 4px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: var(--cp-border-strong) var(--cp-bg-elevated); } .ds-channel { display: flex; align-items: center; gap: 12px; flex: 0 0 226px; min-height: 64px; padding: 12px; text-align: left; background: none; color: var(--cp-text); border: 1px solid var(--cp-border); border-radius: 8px; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; line-height: 1.4; cursor: pointer; touch-action: manipulation; scroll-snap-align: start; } .ds-channel > span:nth-child(2) { flex: 1; } .ds-channel:hover { background: var(--cp-surface-soft); } .ds-channel[aria-pressed='true'] { background: var(--cp-accent); border-color: var(--cp-accent); color: var(--cp-accent-fg); } .ds-channel-id { font-size: 14px; font-variant-numeric: tabular-nums; } .ds-channel-marker { font-size: 17px; } @media (max-width: 760px) { .ds-channel-rail { gap: 4px; padding: 6px; } .ds-channel { flex-basis: 100%; gap: 8px; min-height: 64px; padding: 10px; font-size: 11px; } } @media (forced-colors: active) { .ds-channel { border-width: 2px; } .ds-channel[aria-pressed='true'] { outline: 2px solid; outline-offset: -5px; } }"
+    },
+    {
+      "name": "Category filters",
+      "kind": "chip",
+      "refersTo": "category-filter",
+      "description": "Native pressed-state filter buttons with an explicit check marker, distinct from passive topic tags.",
+      "html": "<div class=\"ds-category-filters\" role=\"group\" aria-label=\"Filter by category\"><button class=\"ds-category-filter\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-filter-check\" aria-hidden=\"true\">✓</span>All projects</button><button class=\"ds-category-filter\" type=\"button\" aria-pressed=\"false\"><span class=\"ds-filter-check\" aria-hidden=\"true\"></span>Experiments</button></div>",
+      "css": ".ds-category-filters { display: flex; flex-wrap: wrap; gap: 8px; } .ds-category-filter { padding: 10px 14px; min-height: 44px; background: none; color: var(--cp-text); border: 1px solid var(--cp-border); border-radius: 10px; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 13px; line-height: 1.55; white-space: nowrap; cursor: pointer; touch-action: manipulation; } .ds-category-filter:hover { border-color: var(--cp-accent); } .ds-category-filter[aria-pressed='true'] { background: var(--cp-text); border-color: var(--cp-text); color: var(--cp-bg); } .ds-category-filter:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-filter-check { display: inline-block; width: 12px; margin-right: 6px; } @media (max-width: 760px) { .ds-category-filters { width: 100%; flex-wrap: nowrap; overflow-x: auto; padding: 4px 4px 10px; margin: -4px; scrollbar-width: thin; } .ds-category-filter { font-size: 12px; padding-inline: 12px; } } @media (forced-colors: active) { .ds-category-filter { border-width: 2px; } .ds-category-filter[aria-pressed='true'] { outline: 2px solid; outline-offset: -5px; } }"
+    },
+    {
+      "name": "Topic tag",
+      "kind": "chip",
+      "refersTo": "topic-tag",
+      "description": "Quiet, noninteractive metadata in a semantic topic list; deliberately no button hover or focus behavior.",
+      "html": "<ul class=\"ds-topics\" aria-label=\"Topics\"><li>Topic</li></ul>",
+      "css": ".ds-topics { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 12px 0 0; padding: 0; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; line-height: 1.55; color: var(--cp-readable-muted); } .ds-topics li { border: 1px solid var(--cp-border); padding: 2px 6px; border-radius: 4px; }"
+    },
+    {
+      "name": "Monitor frame",
+      "kind": "card",
+      "refersTo": "monitor-frame",
+      "description": "Standalone frame specimen using the implemented unavailable-preview fallback, not a fabricated screenshot; the enclosing scene is intentionally omitted.",
+      "html": "<div class=\"ds-monitor-sample\"><a class=\"ds-monitor\" href=\"#ds-monitor-details\" aria-label=\"Inspect project preview\"><span class=\"ds-screen-bar\"><span class=\"ds-screen-indicator\" aria-hidden=\"true\"></span><span class=\"ds-screen-title\">Project preview</span><span class=\"ds-screen-action\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></span></span><span class=\"ds-preview-media\"><span class=\"ds-preview-fallback\"><strong>Project preview</strong><span>No preview available.</span><span>Open the project or browse its source below.</span></span></span><span class=\"ds-screen-caption\"><span>Project preview</span><span>Take a closer look ↗</span></span></a><details class=\"ds-monitor-details\" id=\"ds-monitor-details\"><summary>Take a closer look</summary><p>Open the project or browse its source below.</p></details></div>",
+      "css": ".ds-monitor-sample { perspective: 1400px; padding: 24px; background: var(--cp-link); color: var(--cp-accent-fg); border-radius: 12px; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.55; } .ds-monitor { display: block; padding: 7px; background: var(--cp-surface); color: var(--cp-text); border: 1px solid var(--cp-border); border-radius: 12px; box-shadow: var(--cp-shadow); text-decoration: none; text-align: left; transform: rotateX(3deg); transform-origin: center; touch-action: manipulation; } .ds-monitor:focus-visible, .ds-monitor-details summary:focus-visible { outline: 3px solid var(--cp-accent-fg); outline-offset: 5px; } .ds-screen-bar { display: flex; align-items: center; gap: 8px; height: 30px; padding: 0 8px 4px; font-size: 11px; font-weight: 600; } .ds-screen-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-screen-indicator { height: 7px; width: 7px; border: 1px solid var(--cp-border-strong); border-radius: 50%; flex-shrink: 0; } .ds-screen-action { margin-left: auto; transition: transform 180ms ease-out; } .ds-screen-action svg { display: block; } .ds-monitor:hover .ds-screen-action { color: var(--cp-accent); transform: translate(2px, -2px); } .ds-preview-media { display: block; aspect-ratio: 2; overflow: hidden; background: var(--cp-surface-soft); border-radius: 4px; color: var(--cp-text); } .ds-preview-fallback { height: 100%; padding: 7%; display: flex; flex-direction: column; justify-content: center; gap: 12px; background: var(--cp-bg-elevated); border: 1px solid var(--cp-border); } .ds-preview-fallback strong { font-size: clamp(18px, 3vw, 42px); line-height: 1.1; letter-spacing: -.03em; } .ds-preview-fallback > span { font-size: 13px; color: var(--cp-readable-muted); } .ds-screen-caption { display: flex; justify-content: space-between; gap: 8px; padding: 8px 8px 0; font-size: 10px; } .ds-screen-caption > span:last-child { color: var(--cp-accent); font-weight: 600; } .ds-monitor-details summary { display: flex; align-items: center; justify-content: center; min-height: 44px; font-size: 13px; cursor: pointer; touch-action: manipulation; } .ds-monitor-details summary:hover { text-decoration: underline; } .ds-monitor-details p { font-size: 13px; } :host-context([data-motion='reduced']) .ds-monitor { transform: none; } :host-context([data-motion='reduced']) .ds-screen-action { transition: none; } @media (prefers-reduced-motion: reduce) { .ds-monitor { transform: none; } .ds-screen-action { transition: none; } } @media (max-width: 760px) { .ds-monitor-sample { perspective: none; } .ds-monitor { transform: none; padding: 5px; border-radius: 8px; } .ds-preview-media { aspect-ratio: 8 / 5; } .ds-screen-caption { font-size: 11px; } } @media (forced-colors: active) { .ds-monitor { border-width: 2px; } }"
+    },
+    {
+      "name": "Flat project row",
+      "kind": "custom",
+      "refersTo": "project-row",
+      "description": "Ruled article and direct links, shown with the real missing-description/preview treatment rather than invented project facts.",
+      "html": "<article class=\"ds-project-row\"><span class=\"ds-channel-number\" aria-label=\"Channel 1\">01</span><a class=\"ds-index-preview\" href=\"#ds-row-details\" aria-label=\"Inspect project\"><span class=\"ds-row-preview\"><strong>Project preview</strong></span></a><div class=\"ds-project-copy\"><h3><a class=\"ds-project-title\" href=\"#ds-row-details\">Project title</a></h3><p>No description yet. Explore the project to find out more.</p></div><div class=\"ds-row-actions\"><a class=\"ds-row-launch\" href=\"#ds-row-details\">Launch <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a><a class=\"ds-row-source\" href=\"#ds-row-details\">Source</a></div><details class=\"ds-row-details\" id=\"ds-row-details\"><summary>Take a closer look <span aria-hidden=\"true\">+</span></summary><div class=\"ds-row-detail-content\"><p>This project has no description yet. Open the project or its source to find out more.</p></div></details></article>",
+      "css": ".ds-project-row { display: grid; grid-template-columns: 32px 184px minmax(0, 1fr) auto; align-items: start; gap: 0 28px; padding-block: 28px; border-bottom: 1px solid var(--cp-border); color: var(--cp-text); font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.55; } .ds-project-row :focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-channel-number { color: var(--cp-readable-muted); padding-top: 6px; font-size: 14px; font-variant-numeric: tabular-nums; } .ds-index-preview { margin-top: 4px; display: block; border: 1px solid var(--cp-border); border-radius: 6px; overflow: hidden; text-decoration: none; color: var(--cp-text); } .ds-index-preview:hover { border-color: var(--cp-accent); } .ds-row-preview { display: flex; align-items: center; aspect-ratio: 8 / 5; padding: 12px; gap: 8px; background: var(--cp-bg-elevated); border: 1px solid var(--cp-border); } .ds-row-preview strong { font-size: 16px; line-height: 1.1; letter-spacing: -.03em; } .ds-project-copy { min-width: 0; } .ds-project-copy h3 { margin: 0; font-size: 23px; letter-spacing: -.025em; line-height: 1.2; overflow-wrap: anywhere; } .ds-project-title { display: inline-block; min-height: 44px; padding-block: 4px; text-decoration: none; color: var(--cp-text); } .ds-project-title:hover { color: var(--cp-accent); } .ds-project-copy > p { margin: 8px 0 0; font-size: 14px; line-height: 1.65; max-width: 72ch; color: var(--cp-readable-muted); overflow-wrap: anywhere; } .ds-row-actions { display: flex; flex-direction: column; align-items: end; gap: 4px; padding-top: 4px; } .ds-row-launch { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 12px 20px; border: 1px solid var(--cp-readable-muted); border-radius: 10px; color: var(--cp-text); font-size: 14px; font-weight: 600; line-height: 1.35; text-decoration: none; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-row-launch:hover { background: var(--cp-accent-soft); border-color: var(--cp-accent); color: var(--cp-accent); } .ds-row-source { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; font-size: 13px; text-decoration: none; color: var(--cp-text); } .ds-row-source:hover { color: var(--cp-accent); text-decoration: underline; text-underline-offset: 4px; } .ds-row-details { grid-column: 3 / -1; } .ds-row-details summary { display: flex; justify-content: space-between; align-items: center; min-height: 44px; font-size: 12px; color: var(--cp-accent); cursor: pointer; list-style: none; width: fit-content; gap: 32px; } .ds-row-details summary:hover { text-decoration: underline; text-underline-offset: 4px; } .ds-row-details summary span { font-size: 18px; } .ds-row-details[open] { grid-column: 2 / -1; } .ds-row-details[open] summary { margin-block: 12px; } .ds-row-detail-content { border: 1px solid var(--cp-border); border-radius: 12px; padding: 12px; background: var(--cp-surface); } .ds-row-detail-content p { font-size: 18px; line-height: 1.65; max-width: 72ch; overflow-wrap: anywhere; } :host-context([data-motion='reduced']) .ds-row-launch { transition: none; } @media (prefers-reduced-motion: reduce) { .ds-row-launch { transition: none; } } @media (max-width: 1100px) { .ds-project-row { grid-template-columns: 24px 144px minmax(0, 1fr) auto; gap: 0 20px; } .ds-project-copy h3 { font-size: 21px; } } @media (max-width: 760px) { .ds-project-row { grid-template-columns: 24px 112px minmax(0, 1fr); gap: 0 12px; padding-block: 24px; } .ds-index-preview { grid-column: 2; } .ds-project-copy { grid-column: 2 / -1; margin-top: 16px; } .ds-project-copy h3 { font-size: 24px; } .ds-row-actions { grid-column: 3; grid-row: 1; justify-self: end; flex-direction: row; flex-wrap: wrap; justify-content: flex-end; gap: 4px 12px; } .ds-row-launch { font-size: 12px; padding: 10px 12px; min-height: 44px; } .ds-row-source { font-size: 12px; } .ds-channel-number { grid-column: 1; grid-row: 1; } .ds-row-details { grid-column: 2 / -1; } } @media (max-width: 380px) { .ds-project-row { grid-template-columns: 20px 104px minmax(0, 1fr); gap: 0 8px; } .ds-row-actions { gap: 0; flex-direction: column; } } @media (forced-colors: active) { .ds-row-launch { border-width: 2px; } }"
+    },
+    {
+      "name": "Project detail dialog",
+      "kind": "custom",
+      "refersTo": "project-dialog",
+      "description": "Open visual specimen, positioned within the panel; the application adds showModal, history handling, closing, and focus restoration.",
+      "html": "<dialog class=\"ds-project-dialog\" open aria-labelledby=\"ds-dialog-title\"><div class=\"ds-dialog-header\"><h2 id=\"ds-dialog-title\">Project details</h2><button class=\"ds-dialog-close\" type=\"button\" aria-label=\"Close project details\">×</button></div><div class=\"ds-detail-copy\"><p class=\"ds-detail-summary\">This project has no description yet. Open the project or its source to find out more.</p><p class=\"ds-preview-note\">A snapshot of the interface, not live data. Open the project for its current content.</p></div></dialog>",
+      "css": ".ds-project-dialog { position: relative; margin: 0; width: min(960px, calc(100% - 32px)); max-height: calc(100dvh - 48px); padding: 0; background: var(--cp-surface); color: var(--cp-text); border: 1px solid var(--cp-border-strong); border-radius: 16px; box-shadow: var(--cp-shadow); overscroll-behavior: contain; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.55; } .ds-project-dialog::backdrop { background: var(--cp-overlay); } .ds-dialog-header { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 28px; background: var(--cp-surface); border-bottom: 1px solid var(--cp-border); } .ds-dialog-header h2 { margin: 0; font-size: 25px; letter-spacing: -.03em; line-height: 1.1; overflow-wrap: anywhere; } .ds-dialog-close { display: grid; place-items: center; width: 44px; min-height: 44px; flex-shrink: 0; border: 1px solid var(--cp-border); background: var(--cp-surface-soft); color: var(--cp-text); border-radius: 10px; font-family: 'Segoe UI', Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 28px; cursor: pointer; touch-action: manipulation; } .ds-dialog-close:hover { color: var(--cp-accent); border-color: var(--cp-accent); } .ds-dialog-close:focus-visible { outline: 3px solid var(--cp-accent); outline-offset: 5px; } .ds-detail-copy { padding: 28px; } .ds-detail-summary { margin: 0; font-size: 18px; max-width: 72ch; line-height: 1.65; overflow-wrap: anywhere; } .ds-preview-note { color: var(--cp-readable-muted); font-size: 12px; } @media (max-width: 760px) { .ds-project-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 24px); border-radius: 12px; } .ds-dialog-header { padding: 12px 16px; gap: 12px; } .ds-dialog-header h2 { font-size: 21px; } .ds-detail-copy { padding: 20px; } .ds-detail-summary { font-size: 16px; } } @media (prefers-reduced-motion: no-preference) { .ds-project-dialog { transition: opacity 180ms ease-out, transform 180ms ease-out, overlay 180ms allow-discrete, display 180ms allow-discrete; } @starting-style { .ds-project-dialog[open] { opacity: 0; transform: translateY(12px); } } } :host-context([data-motion='reduced']) .ds-project-dialog { transition: none; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Working Screen Wall",
+    "overview": "A blue broadcast field, aluminum-like monitor frames, signal accents, and direct native controls give the work a physical setting. Depth belongs to the screens and their selection; surrounding text and controls stay clear, practical, and readily readable.\n\nThe material is actual project imagery, not decorative UI reconstructions. Heavy system sans supplies the display voice, while compact metadata and a flat, ruled index support closer inspection. Native semantic HTML, CSS, and small ES modules carry the implementation; no frontend framework or 3D engine is required.",
+    "keyCharacteristics": [
+      "Shared Clawpilot colors in light and dark themes.",
+      "Heavy system-sans display with readable secondary copy.",
+      "Structural monitor depth beside a flat, ruled index.",
+      "Short, interruptible selection motion with a complete reduced-motion path.",
+      "Source-backed previews and native, keyboard-accessible controls."
+    ],
+    "rules": [
+      { "name": "The Shared Signal Rule", "body": "Use the existing Clawpilot properties for interface color; let project imagery keep its source colors without promoting them into UI tokens.", "section": "colors" },
+      { "name": "The Readable Metadata Rule", "body": "Use readable secondary ink for descriptions, dates, and field hints; preserve wrapping and text hierarchy instead of hiding essential information in tiny screen chrome.", "section": "typography" },
+      { "name": "The Structural Depth Rule", "body": "Reserve physical depth for monitor selection and the modal layer; keep the direct index flat and readable rather than treating every content group as another floating screen.", "section": "elevation" },
+      { "name": "The Source Material Rule", "body": "Show source-backed project snapshots with descriptive alternatives, capture context, and an honest unavailable-preview fallback; do not recolor screenshots to simulate the interface palette or imply that snapshots are live data.", "section": "components" },
+      { "name": "The Interruptible Selection Rule", "body": "Motion acknowledges the current selection and yields immediately to the next action, reduced-motion settings, or a hidden document; it never becomes a prerequisite for reaching the work.", "section": "components" }
+    ],
+    "dos": [
+      "Do bind interface colors to the existing Clawpilot properties and keep light/dark role pairings intact.",
+      "Do use the system font stack, readable secondary ink, wrapping copy, and visible focus.",
+      "Do keep monitor depth structural and the direct index flat.",
+      "Do retain labeled native controls, generous targets, keyboard paths, and static details.",
+      "Do use actual project snapshots with capture context and honest unavailable-preview fallbacks.",
+      "Do keep selection motion short, interruptible, and optional."
+    ],
+    "donts": [
+      "Don't turn screenshot colors, unused theme declarations, or sidecar swatch ramps into new interface tokens.",
+      "Don't replace the heavy system display with an illustrative custom font.",
+      "Don't use the dark theme's lower-contrast muted declaration for ordinary metadata.",
+      "Don't make information or navigation depend on hover, depth, color alone, or animation.",
+      "Don't present snapshot content as live telemetry or replace missing evidence with a fabricated interface."
+    ]
+  }
+}

@@ -1,11 +1,164 @@
 [
   {
+    "name": "me7",
+    "description": null,
+    "url": "https://e7calc.azurewebsites.net/",
+    "source": "https://github.com/zeffree/me7",
+    "updated": "2026-09-03T06:35:18Z",
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "Microsoft 365 E7 Savings Assessment",
+    "summary": "Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.",
+    "category": "Decision tools",
+    "featured": 1,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/me7-1280.webp",
+      "small": "assets/previews/me7-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together.",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "jcorp-ai-readiness",
+    "description": "AI readiness assessment and management benchmark dashboard for JCorp group companies, structured on the McKinsey AI Individual & Organizational Assessment framework.",
+    "url": "https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/",
+    "source": "https://github.com/zeffree/jcorp-ai-readiness",
+    "updated": "2026-08-11T13:07:34Z",
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "JCorp AI Readiness",
+    "summary": "AI readiness assessment and management benchmarking for JCorp group companies, structured around the McKinsey individual and organizational assessment framework.",
+    "category": "AI & adoption",
+    "featured": 4,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/jcorp-ai-readiness-1280.webp",
+      "small": "assets/previews/jcorp-ai-readiness-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "gooestome3",
+    "description": "Simulation of the Cost from moving from Google Enterprise Std to M365 E3",
+    "url": "https://zeffree.github.io/gooestome3/",
+    "source": "https://github.com/zeffree/gooestome3",
+    "updated": "2026-05-22T09:49:48Z",
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Google Workspace vs Microsoft 365 E3",
+    "summary": "Compare Google Workspace Enterprise Standard plus third-party tools with Microsoft 365 E3 costs and capabilities.",
+    "category": "Decision tools",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/gooestome3-1280.webp",
+      "small": "assets/previews/gooestome3-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Google Workspace Enterprise Standard and Microsoft 365 E3 comparison with user inputs, capability lists and cost totals.",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "malakoff-ceo-dashboard",
+    "description": "Malakoff CEO war-room dashboard prototype",
+    "url": "https://zeffree.github.io/malakoff-ceo-dashboard/",
+    "source": "https://github.com/zeffree/malakoff-ceo-dashboard",
+    "updated": "2026-05-19T07:26:30Z",
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Malakoff CEO Control Center",
+    "summary": "An executive dashboard prototype with operations, financial, sustainability and safety views.",
+    "category": "Data & insights",
+    "featured": 2,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/malakoff-ceo-dashboard-1280.webp",
+      "small": "assets/previews/malakoff-ceo-dashboard-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Malakoff dashboard prototype with an asset map, operations indicators, generation-mix bars and an incident list.",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "jcorpmsft",
+    "description": "Fun, interactive 12-month M365 Copilot adoption journey for Johor Corporation HQ",
+    "url": "https://zeffree.github.io/jcorpmsft/",
+    "source": "https://github.com/zeffree/jcorpmsft",
+    "updated": "2026-05-06T15:33:32Z",
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "JCorp × Copilot Adoption Journey",
+    "summary": "A 12-month Microsoft 365 Copilot adoption plan for Johor Corporation, organized around hands-on quests and champions.",
+    "category": "AI & adoption",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/jcorpmsft-1280.webp",
+      "small": "assets/previews/jcorpmsft-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "JCorp × Copilot page introducing a 12-month adoption journey, with program highlights and the beginning of the adoption plan.",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "ssdumsft",
+    "description": "SSDU x Microsoft - AI partnership blueprint for Smart Selangor",
+    "url": "https://zeffree.github.io/ssdumsft/",
+    "source": "https://github.com/zeffree/ssdumsft",
+    "updated": "2026-04-29T23:08:56Z",
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Smart Selangor AI Blueprint",
+    "summary": "An SSDU × Microsoft partnership blueprint connecting cloud and AI use cases with proposed pilots and a roadmap.",
+    "category": "AI & adoption",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/ssdumsft-1280.webp",
+      "small": "assets/previews/ssdumsft-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "SSDU × Microsoft blueprint with a Smart Selangor introduction, opportunity panel and navigation to use cases and a roadmap.",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
     "name": "o365e3tom365e3",
     "description": "Interactive O365 E3 + 3rd-party vs M365 E3 bundle cost simulator (Gartner MQ-curated)",
     "url": "https://zeffree.github.io/o365e3tom365e3/",
     "source": "https://github.com/zeffree/o365e3tom365e3",
     "updated": "2026-04-28T08:28:19Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Office 365 to Microsoft 365 E3",
+    "summary": "Model Office 365 E3 plus third-party add-ons against the Microsoft 365 E3 bundle.",
+    "category": "Decision tools",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/o365e3tom365e3-1280.webp",
+      "small": "assets/previews/o365e3tom365e3-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Office 365 E3 comparison with user and add-on controls, bundle cost totals and a side-by-side cost breakdown.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
     "name": "me3tome5",
@@ -13,7 +166,22 @@
     "url": "https://zeffree.github.io/me3tome5/",
     "source": "https://github.com/zeffree/me3tome5",
     "updated": "2026-04-28T08:28:17Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Microsoft 365 E5 Cost Simulator",
+    "summary": "Compare Microsoft 365 E5 with E3 plus a replacement stack across costs and capabilities.",
+    "category": "Decision tools",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/me3tome5-1280.webp",
+      "small": "assets/previews/me3tome5-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Microsoft 365 E5 comparison with user and replacement-stack controls beside cost totals and side-by-side line items.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
     "name": "o365-data-sovereignty-malaysia",
@@ -21,7 +189,22 @@
     "url": "https://zeffree.github.io/o365-data-sovereignty-malaysia/",
     "source": "https://github.com/zeffree/o365-data-sovereignty-malaysia",
     "updated": "2026-04-27T01:36:53Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Microsoft 365 Data Sovereignty",
+    "summary": "A Malaysia-focused reference on Microsoft 365 data ownership, residency, lawful access and customer controls.",
+    "category": "Decision tools",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/o365-data-sovereignty-malaysia-1280.webp",
+      "small": "assets/previews/o365-data-sovereignty-malaysia-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Malaysia data-sovereignty reference with an introduction, key ownership and residency points, and section navigation.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
     "name": "cambodia-asean-ai-dashboard",
@@ -29,7 +212,22 @@
     "url": "https://zeffree.github.io/cambodia-asean-ai-dashboard/",
     "source": "https://github.com/zeffree/cambodia-asean-ai-dashboard",
     "updated": "2026-04-26T05:25:56Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Cambodia × ASEAN AI Readiness",
+    "summary": "Compare Cambodia with ASEAN peers across digital infrastructure, AI readiness, human capital and innovation.",
+    "category": "Data & insights",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/cambodia-asean-ai-dashboard-1280.webp",
+      "small": "assets/previews/cambodia-asean-ai-dashboard-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Cambodia–ASEAN readiness dashboard with country comparison buttons, AI-readiness summary cards and demographic indicators.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
     "name": "malaysia-macro-explorer",
@@ -37,7 +235,22 @@
     "url": "https://zeffree.github.io/malaysia-macro-explorer/",
     "source": "https://github.com/zeffree/malaysia-macro-explorer",
     "updated": "2026-04-26T05:12:41Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Malaysia Macro Explorer",
+    "summary": "Explore relationships between inflation, employment, GDP and population using Department of Statistics Malaysia open data.",
+    "category": "Data & insights",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/malaysia-macro-explorer-1280.webp",
+      "small": "assets/previews/malaysia-macro-explorer-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Malaysia Macro Explorer with economic indicators, date and metric selectors, and an inflation–unemployment time-series chart.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
     "name": "gttcopilotchathr",
@@ -45,22 +258,67 @@
     "url": "https://zeffree.github.io/gttcopilotchathr/",
     "source": "https://github.com/zeffree/gttcopilotchathr",
     "updated": "2026-04-26T03:30:21Z",
-    "archived": false
+    "archived": false,
+    "origin": "github",
+    "sourcePrivate": false,
+    "title": "Copilot Chat for HR",
+    "summary": "A GTT Group workshop covering prompting, HR communications, hiring, policy and employee-feedback analysis.",
+    "category": "AI & adoption",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/gttcopilotchathr-1280.webp",
+      "small": "assets/previews/gttcopilotchathr-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda.",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
-    "name": "cv",
+    "name": "mmcdashboard",
     "description": null,
-    "url": "https://zeffree.github.io/cv/",
-    "source": "https://github.com/zeffree/cv",
-    "updated": "2026-04-25T00:03:48Z",
-    "archived": false
+    "url": "https://zeffree.github.io/mmcdashboard/",
+    "source": "https://github.com/zeffree/mmcdashboard",
+    "updated": null,
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": true,
+    "title": "MMC Executive Dashboard Concept",
+    "summary": "An illustrative group-level executive dashboard with synthetic data, not actual MMC results. An independent concept, not affiliated with or endorsed by MMC.",
+    "category": "Data & insights",
+    "featured": 3,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/mmcdashboard-1280.webp",
+      "small": "assets/previews/mmcdashboard-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance",
+      "capturedAt": "2026-09-18"
+    }
   },
   {
-    "name": "myspringboard",
+    "name": "t1-demo-station",
     "description": null,
-    "url": "https://zeffree.github.io/myspringboard/",
-    "source": "https://github.com/zeffree/myspringboard",
-    "updated": "2021-06-29T04:21:12Z",
-    "archived": false
+    "url": "https://t-onedemo-admin.azurewebsites.net/",
+    "source": null,
+    "updated": null,
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "T1 Demo Station",
+    "summary": "A little file, out in the world. Publish and share self-contained HTML demos from a browser-based station.",
+    "category": "Experiments",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/t1-demo-station-1280.webp",
+      "small": "assets/previews/t1-demo-station-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "T1 Demo Station project page showing access.term; Good things start here.",
+      "capturedAt": "2026-09-18"
+    }
   }
 ]
