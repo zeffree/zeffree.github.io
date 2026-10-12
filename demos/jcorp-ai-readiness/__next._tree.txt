@@ -1,0 +1,3 @@
+:HL["/jcorp-ai-readiness/_next/static/css/1e658aedd00708cd.css","style"]
+:HL["/jcorp-ai-readiness/_next/static/css/241a662dd4130e69.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"xBK0MGOYVhOZJVPMFiPQi"}

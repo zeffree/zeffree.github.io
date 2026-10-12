@@ -6,7 +6,7 @@
   "additionalProjects": [
     {
       "name": "jcorp-ai-readiness",
-      "url": "https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/",
+      "url": "https://zeffree.github.io/jcorp-ai-readiness/",
       "source": "https://github.com/zeffree/jcorp-ai-readiness"
     },
     {

@@ -56,6 +56,13 @@ async function main() {
   await fs.mkdir(dist, { recursive: true });
   await fs.cp(path.join(ROOT, "assets"), path.join(dist, "assets"), { recursive: true });
   await fs.copyFile(path.join(ROOT, "styles.css"), path.join(dist, "styles.css"));
+  // Self-contained static demos (e.g. demos/jcorp-ai-readiness) are published
+  // at /<name>/ alongside the catalog.
+  const demosDir = path.join(ROOT, "demos");
+  const demos = await fs.readdir(demosDir, { withFileTypes: true }).catch(() => []);
+  for (const demo of demos.filter((entry) => entry.isDirectory())) {
+    await fs.cp(path.join(demosDir, demo.name), path.join(dist, demo.name), { recursive: true });
+  }
   await Promise.all([
     fs.writeFile(path.join(dist, "index.html"), html, "utf8"),
     fs.writeFile(path.join(dist, "projects.json"), json, "utf8"),

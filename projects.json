@@ -25,7 +25,7 @@
   {
     "name": "jcorp-ai-readiness",
     "description": "AI readiness assessment and management benchmark dashboard for JCorp group companies, structured on the McKinsey AI Individual & Organizational Assessment framework.",
-    "url": "https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/",
+    "url": "https://zeffree.github.io/jcorp-ai-readiness/",
     "source": "https://github.com/zeffree/jcorp-ai-readiness",
     "updated": "2026-08-11T13:07:34Z",
     "archived": false,
