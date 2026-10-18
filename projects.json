@@ -1,33 +1,10 @@
 [
   {
-    "name": "me7",
-    "description": null,
-    "url": "https://e7calc.azurewebsites.net/",
-    "source": "https://github.com/zeffree/me7",
-    "updated": "2026-09-03T06:35:18Z",
-    "archived": false,
-    "origin": "manual",
-    "sourcePrivate": false,
-    "title": "Microsoft 365 E7 Savings Assessment",
-    "summary": "Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.",
-    "category": "Decision tools",
-    "featured": 1,
-    "topics": [],
-    "preview": {
-      "src": "assets/previews/me7-1280.webp",
-      "small": "assets/previews/me7-640.webp",
-      "width": 1280,
-      "height": 800,
-      "alt": "Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together.",
-      "capturedAt": "2026-09-18"
-    }
-  },
-  {
     "name": "jcorp-ai-readiness",
     "description": "AI readiness assessment and management benchmark dashboard for JCorp group companies, structured on the McKinsey AI Individual & Organizational Assessment framework.",
     "url": "https://zeffree.github.io/jcorp-ai-readiness/",
     "source": "https://github.com/zeffree/jcorp-ai-readiness",
-    "updated": "2026-08-11T13:07:34Z",
+    "updated": "2026-10-12T09:20:16Z",
     "archived": false,
     "origin": "manual",
     "sourcePrivate": false,
@@ -42,6 +19,29 @@
       "width": 1280,
       "height": 800,
       "alt": "JCorp AI Readiness project page showing Where do we really stand on AI readiness?; Your responses are anonymous; Personal readiness",
+      "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "me7",
+    "description": null,
+    "url": "https://e7calc.azurewebsites.net/",
+    "source": "https://github.com/zeffree/me7",
+    "updated": "2026-09-27T23:03:17Z",
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "Microsoft 365 E7 Savings Assessment",
+    "summary": "Explore Microsoft 365 E7 consolidation and savings scenarios across existing Microsoft 365 plans. An estimator, not an official pricing quote.",
+    "category": "Decision tools",
+    "featured": 1,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/me7-1280.webp",
+      "small": "assets/previews/me7-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Microsoft 365 E7 Savings Assessment project page showing A stronger workspace. A leaner toolset.; Less juggling. More working together.",
       "capturedAt": "2026-09-18"
     }
   },
@@ -273,6 +273,52 @@
       "height": 800,
       "alt": "GTT Copilot Chat for HR workshop with a module sidebar, workshop introduction, learning objectives and agenda.",
       "capturedAt": "2026-09-18"
+    }
+  },
+  {
+    "name": "cuba-copilot",
+    "description": null,
+    "url": "https://cubacopilot.azurewebsites.net/",
+    "source": null,
+    "updated": null,
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "Cuba Copilot · Experience Lab",
+    "summary": "A hands-on Microsoft 365 Copilot lab with 28 realistic missions, practice files and guided prompts tailored to different business teams.",
+    "category": "AI & adoption",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/cuba-copilot-1280.webp",
+      "small": "assets/previews/cuba-copilot-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Cuba Copilot · Experience Lab project page showing Copilot Experience Lab; Check in to start",
+      "capturedAt": "2026-10-18"
+    }
+  },
+  {
+    "name": "detektif-air",
+    "description": null,
+    "url": "https://airselangor-copilot-lab.azurewebsites.net/",
+    "source": null,
+    "updated": null,
+    "archived": false,
+    "origin": "manual",
+    "sourcePrivate": false,
+    "title": "Detektif Air · Pembelajaran Microsoft 365 Copilot mengikut kadar sendiri · Air Selangor",
+    "summary": "Kursus kendiri Air Selangor dengan 12 kes utiliti air untuk berlatih menggunakan Copilot Chat, Word, Excel, PowerPoint, Create dan Notebooks.",
+    "category": "AI & adoption",
+    "featured": null,
+    "topics": [],
+    "preview": {
+      "src": "assets/previews/detektif-air-1280.webp",
+      "small": "assets/previews/detektif-air-640.webp",
+      "width": 1280,
+      "height": 800,
+      "alt": "Detektif Air · Pembelajaran Microsoft 365 Copilot mengikut kadar sendiri · Air Selangor project page showing Detektif Air; Sign in to start",
+      "capturedAt": "2026-10-18"
     }
   },
   {

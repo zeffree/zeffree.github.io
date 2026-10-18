@@ -23,6 +23,14 @@
       "url": "https://zeffree.github.io/mmcdashboard/",
       "source": "https://github.com/zeffree/mmcdashboard",
       "sourcePrivate": true
+    },
+    {
+      "name": "detektif-air",
+      "url": "https://airselangor-copilot-lab.azurewebsites.net/"
+    },
+    {
+      "name": "cuba-copilot",
+      "url": "https://cubacopilot.azurewebsites.net/"
     }
   ],
   "projects": {
@@ -210,6 +218,32 @@
         "height": 800,
         "alt": "MMC Executive Dashboard Concept project page showing This is a design concept, not real company data; Group CEO Dashboard; Group performance at a glance",
         "capturedAt": "2026-09-18"
+      }
+    },
+    "detektif-air": {
+      "title": "Detektif Air · Pembelajaran Microsoft 365 Copilot mengikut kadar sendiri · Air Selangor",
+      "summary": "Kursus kendiri Air Selangor dengan 12 kes utiliti air untuk berlatih menggunakan Copilot Chat, Word, Excel, PowerPoint, Create dan Notebooks.",
+      "category": "AI & adoption",
+      "preview": {
+        "src": "assets/previews/detektif-air-1280.webp",
+        "small": "assets/previews/detektif-air-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Detektif Air · Pembelajaran Microsoft 365 Copilot mengikut kadar sendiri · Air Selangor project page showing Detektif Air; Sign in to start",
+        "capturedAt": "2026-10-18"
+      }
+    },
+    "cuba-copilot": {
+      "title": "Cuba Copilot · Experience Lab",
+      "summary": "A hands-on Microsoft 365 Copilot lab with 28 realistic missions, practice files and guided prompts tailored to different business teams.",
+      "category": "AI & adoption",
+      "preview": {
+        "src": "assets/previews/cuba-copilot-1280.webp",
+        "small": "assets/previews/cuba-copilot-640.webp",
+        "width": 1280,
+        "height": 800,
+        "alt": "Cuba Copilot · Experience Lab project page showing Copilot Experience Lab; Check in to start",
+        "capturedAt": "2026-10-18"
       }
     }
   }

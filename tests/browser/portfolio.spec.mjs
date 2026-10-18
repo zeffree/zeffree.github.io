@@ -30,10 +30,12 @@ test("explicit project membership and deployed launch URLs survive rendering", a
   await ready(page);
   const projects = await catalog(page);
   const expected = {
-    "jcorp-ai-readiness": "https://jcorp-ai-readiness-xcvzjh.azurewebsites.net/",
+    "jcorp-ai-readiness": "https://zeffree.github.io/jcorp-ai-readiness/",
     me7: "https://e7calc.azurewebsites.net/",
     "t1-demo-station": "https://t-onedemo-admin.azurewebsites.net/",
     mmcdashboard: "https://zeffree.github.io/mmcdashboard/",
+    "detektif-air": "https://airselangor-copilot-lab.azurewebsites.net/",
+    "cuba-copilot": "https://cubacopilot.azurewebsites.net/",
   };
   for (const name of ["test-hermes", "myspringboard"]) {
     expect(projects.some((project) => project.name === name)).toBe(false);
