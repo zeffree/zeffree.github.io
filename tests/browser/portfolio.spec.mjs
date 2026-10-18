@@ -47,6 +47,19 @@ test("explicit project membership and deployed launch URLs survive rendering", a
   }
 });
 
+test("Cuba Copilot is featured second", async ({ page }) => {
+  await ready(page);
+  const order = await page.locator("[data-project-row]").evaluateAll((rows) =>
+    rows.slice(0, 5).map((row) => row.dataset.projectRow));
+  expect(order).toEqual([
+    "me7",
+    "cuba-copilot",
+    "malakoff-ceo-dashboard",
+    "mmcdashboard",
+    "jcorp-ai-readiness",
+  ]);
+});
+
 test("external and private-source project details remain truthful", async ({ page }) => {
   await ready(page, "/?project=t1-demo-station&view=details");
   const dialog = page.getByRole("dialog");
